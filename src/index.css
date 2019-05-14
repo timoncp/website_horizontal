@@ -1,0 +1,46 @@
+/*
+COLORS:
+
+White: #FFFFFF
+Light gray: #DBDADA
+Gray: #8D8D8D
+Blue gray: #424E5C
+Shadow gray: #707070
+
+--- Home ---
+
+Light blue: #86A5C1
+Yellow: #E2CD33
+Light yellow: #F2E187
+
+--- About ---
+
+Light sea green: #86C9A2
+Dark sea green: #86C6BC
+
+--- Work ---
+
+Dark gray: #464646
+Pale orange: #E6B685
+
+--- Services ---
+
+Cherry red: #6C3A49
+Lime: #D5EB98
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #777;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
