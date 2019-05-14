@@ -2,13 +2,13 @@ import React from 'react';
 
 import './page.css';
 
-function Work(props) {
+function Page(props) {
   return (
     <div>
-      <h1>{props.pageTitle}</h1>
+      <h1>{props.title}</h1>
       {props.children}
     </div>
   );
 }
 
-export default Work;
+export default Page;

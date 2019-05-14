@@ -6,9 +6,7 @@ import './home.css';
 
 function Home() {
   return (
-    <Page>
-      Home
-    </Page>
+    <Page title='home' />
   );
 }
 

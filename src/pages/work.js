@@ -6,9 +6,7 @@ import './work.css';
 
 function Work() {
   return (
-    <Page>
-      Work
-    </Page>
+    <Page title='previous work' />
   );
 }
 

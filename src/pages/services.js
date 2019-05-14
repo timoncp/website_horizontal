@@ -6,9 +6,7 @@ import './services.css';
 
 function Services() {
   return (
-    <Page>
-      Services
-    </Page>
+    <Page title='services' />
   );
 }
 

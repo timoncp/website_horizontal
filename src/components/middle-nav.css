@@ -1,0 +1,30 @@
+.middle-nav {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 100px;
+  left: -84px;
+}
+
+.middle-nav > img {
+  display: inline;
+}
+
+.middle-nav-center {
+  width: 66px;
+  border-radius: 50px;
+  border: 1px solid rgba(112, 112, 112, 0.8);
+  box-shadow: 0 3px 6px rgba(13, 10, 10, 0.35);
+  margin: 0 20px;
+}
+
+.middle-nav-arrow {
+  width: 30px;
+  cursor: pointer;
+}
+
+.middle-nav-arrow.dimmed {
+  opacity: 0.3;
+  cursor: default;
+}

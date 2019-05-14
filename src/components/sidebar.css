@@ -1,0 +1,38 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: relative;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-top {
+  margin-top: 20px;
+  align-self: center;
+  display: flex;
+}
+
+.sidebar-bottom {
+  font-family: 'Montserrat Alternates', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  color: rgb(66, 78, 92);
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  min-width: 500px;
+
+  position: absolute;
+  bottom: -125px;
+  left: 20px;
+}
+
+.sidebar-bottom > h1 {
+  opacity: 0.2;
+  font-size: 90px;
+  line-height: 125px;
+}
+
+.sidebar-bottom > h3 {
+  opacity: 0.3;
+  font-size: 18px;
+  line-height: 32px;
+}

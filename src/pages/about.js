@@ -6,9 +6,7 @@ import './about.css';
 
 function About() {
   return (
-    <Page>
-      About
-    </Page>
+    <Page title='about' />
   );
 }
 
