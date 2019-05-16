@@ -1,0 +1,9 @@
+.page-subtitle {
+  display: block;
+  font-size: 26px;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  color: #DBDADA;
+  margin-bottom: 20px;
+}

@@ -35,7 +35,7 @@ function MiddleNav(props) {
         onClick={goBackward}
       />
       <img className='middle-nav-center' src={TimoJPG}
-        alt='Decorative Center image'
+        alt='Circle portrait'
       />
       <img className={classNames('middle-nav-arrow', {
         dimmed: props.location.pathname === paths[3]

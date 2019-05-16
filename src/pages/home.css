@@ -1,0 +1,39 @@
+.home {
+  background-color: #86A5C1;
+}
+
+#welcome {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.welcome-gray {
+  font-family: 'KoHo', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  color: #DBDADA;
+  text-shadow: 1px 2px 3px rgba(45, 46, 59, 0.082);
+}
+
+.welcome-yellow {
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  font-style: italic;
+  color: #F2E187;
+  text-shadow: -1px 0 #E2CD33, 0 1px #E2CD33, 1px 0 #E2CD33, 0 -1px #E2CD33, 0 3px 5px rgba(45, 46, 59, 0.178);
+}
+
+#home-arrow {
+  position: absolute;
+  bottom: 65px;
+  right: 200px;
+  transform: scaleX(0.8) scaleY(0.9);
+}
+
+#home-arrow-text {
+  color: #424E5C;
+  font-size: 12px;
+  position: absolute;
+  bottom: 50px;
+  right: 80px;
+}

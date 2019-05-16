@@ -1,0 +1,20 @@
+.cta-button {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+
+  font-family: 'KoHo', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  color: #424E5C;
+
+  border: 5px solid #86C6BC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.185); */
+  background-color: #86C6BC;
+  color: white;
+}

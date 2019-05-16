@@ -1,0 +1,15 @@
+.about {
+  background-color: #424E5C;
+}
+
+#photo-and-cta {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#portrait {
+  display: block;
+  height: 300px;
+  border: solid 1px #707070;
+  margin-bottom: 50px;
+}

@@ -12,8 +12,8 @@ function Sidebar() {
         <SocialBtn type='github' />
       </div>
       <div className='sidebar-bottom'>
-        <h1 className='page-title'>timoncp.io</h1>
-        <h3 className='page-subtitle'>fullstack developer &#8212; custom web solutions</h3>
+        <h1>timoncp.io</h1>
+        <h3>fullstack developer &#8212; custom web solutions</h3>
       </div>
     </div>
   );

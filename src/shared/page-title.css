@@ -1,0 +1,20 @@
+.page-title {
+  font-size: 30px;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  color: #DBDADA;
+  margin-bottom: 170px;
+}
+
+.page-title.seagreen {
+  color: #86C9A2;
+}
+
+.page-title.paleorange {
+  color: #E6B685;
+}
+
+.page-title.lime {
+  color: #D5EB98;
+}

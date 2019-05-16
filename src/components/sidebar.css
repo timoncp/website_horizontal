@@ -3,13 +3,22 @@
   flex-direction: column;
   background-color: #FFFFFF;
   position: relative;
+
+  width: 25vw;
+  min-width: 225px;
+  max-width: 270px;
+
+  padding-top: 23px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-top {
-  margin-top: 20px;
   align-self: center;
   display: flex;
+}
+
+.sidebar-top > div:first-child {
+  margin-right: 20px;
 }
 
 .sidebar-bottom {
@@ -26,7 +35,7 @@
 }
 
 .sidebar-bottom > h1 {
-  opacity: 0.2;
+  opacity: 0.15;
   font-size: 90px;
   line-height: 125px;
 }
@@ -35,4 +44,5 @@
   opacity: 0.3;
   font-size: 18px;
   line-height: 32px;
+  padding-left: 6px;
 }

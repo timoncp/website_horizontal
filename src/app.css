@@ -4,12 +4,7 @@
   display: flex;
 }
 
-.app > div:first-child {
-  min-width: 300px;
-  flex: 1;
-}
-
 .app > div:nth-child(2) {
-  flex: 4;
+  flex: 5;
   position: relative;
 }

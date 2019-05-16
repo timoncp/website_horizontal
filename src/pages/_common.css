@@ -1,0 +1,36 @@
+.page {
+  width: 100%;
+  height: 100%;
+
+  padding: 12px 83px;
+}
+
+.text-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 370px;
+
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  text-justify: inter-word;
+
+  margin-right: 83px;
+}
+
+.text-column > i {
+  font-style: italic;
+  color: #86C9AD;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .page {
+    padding: 12px 5vw;
+  }
+
+  .text-column {
+    margin-right: 5vw;
+  }
+} */

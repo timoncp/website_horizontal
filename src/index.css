@@ -47,7 +47,7 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #777;
+  color: #DBDADA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -55,4 +55,15 @@ body {
 #root {
   width: 100%;
   height: 100%;
+}
+
+a,
+a:focus,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
