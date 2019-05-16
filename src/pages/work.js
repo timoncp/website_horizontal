@@ -8,7 +8,7 @@ import './work.css';
 
 function Work() {
   return (
-    <div className='page about'>
+    <div className='page work'>
       <PageTitle color='paleorange'>previous work</PageTitle>
       <div className='section'>
         <SectionHeader color='paleorange'>BearingPoint</SectionHeader>
