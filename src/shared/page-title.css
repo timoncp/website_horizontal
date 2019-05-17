@@ -1,10 +1,12 @@
 .page-title {
+  margin-bottom: 140px; /* previously 162px */
+
   font-size: 30px;
+  line-height: 70px;
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
   font-style: italic;
   font-weight: 800;
   color: #DBDADA;
-  margin-bottom: 162px;
 }
 
 .page-title.seagreen {

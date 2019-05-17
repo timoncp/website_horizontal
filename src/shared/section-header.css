@@ -1,0 +1,19 @@
+.section-header {
+  font-family: 'KoHo', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-top: 1px solid;
+  max-width: 280px;
+}
+
+.section-header.paleorange {
+  color: #E6B685;
+  border-top-color: #E6B685;
+}
+
+.section-header.lime {
+  color: #D5EB98;
+  border-top-color: #D5EB98;
+}

@@ -2,3 +2,23 @@
   background-color: #464646;
 }
 
+#be {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#findie_sbu {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#findie_sbu > .text-column {
+  display: block;
+  margin-bottom: 50px;
+}
+
+#landscapp-screenshots {
+  display: inline-block;
+  vertical-align: top;
+  height: 600px;
+}

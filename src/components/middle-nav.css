@@ -4,7 +4,7 @@
 
   position: absolute;
   top: 100px;
-  left: -84px;
+  left: -98px;
 }
 
 .middle-nav > img {
@@ -12,7 +12,7 @@
 }
 
 .middle-nav-center {
-  width: 66px;
+  width: 80px;
   border-radius: 50px;
   border: 1px solid rgba(112, 112, 112, 0.8);
   box-shadow: 0 3px 6px rgba(13, 10, 10, 0.35);
@@ -20,7 +20,7 @@
 }
 
 .middle-nav-arrow {
-  width: 30px;
+  width: 38px;
   cursor: pointer;
 }
 

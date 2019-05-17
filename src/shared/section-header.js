@@ -4,11 +4,8 @@ import './section-header.css';
 
 function SectionHeader(props) {
   return (
-    <div className='section-header'>
-      <svg className='section-header-overline'></svg>
-      <h3 className='section-header-text'></h3>
-    </div>
-  )
+    <h3 className={`section-header ${props.color}`}>{props.children}</h3>
+  );
 }
 
 export default SectionHeader;
