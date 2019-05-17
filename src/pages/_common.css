@@ -20,9 +20,19 @@
   margin-right: 50px;
 }
 
+.text-column.sm {
+  width: 280px;
+}
+
 .text-column > i {
   font-style: italic;
   color: #86C9AD;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 /* @media screen and (max-width: 1024px) {

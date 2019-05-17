@@ -1,0 +1,14 @@
+<svg id="checkmark-outlined-circular-button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_69" data-name="Group 69">
+    <g id="circle_copy_4_7_">
+      <g id="Group_67" data-name="Group 67">
+        <path id="Path_152" data-name="Path 152" d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm0,38.75A18.75,18.75,0,1,1,38.75,20,18.75,18.75,0,0,1,20,38.75Z" fill="#d5eb98"/>
+      </g>
+    </g>
+    <g id="check" transform="translate(11.755 14.255)">
+      <g id="Group_68" data-name="Group 68">
+        <path id="Path_153" data-name="Path 153" d="M35.3,23.692l-.884-.884-9.861,9.861-4.861-4.861-.884.884L24.414,34.3l.139-.138.139.138Z" transform="translate(-18.808 -22.808)" fill="#d5eb98"/>
+      </g>
+    </g>
+  </g>
+</svg>

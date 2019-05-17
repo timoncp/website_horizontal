@@ -3,8 +3,17 @@ import React from 'react';
 import './section-header.css';
 
 function SectionHeader(props) {
+  let txtCls = `section-header-text ${props.color}`;
+
+  if (props.icon) {
+    txtCls += ' sm';
+  }
+
   return (
-    <h3 className={`section-header ${props.color}`}>{props.children}</h3>
+    <div className='section-header'>
+      <h3 className={txtCls}>{props.children}</h3>
+      {props.icon && <img src={props.icon} className='section-header-svg' alt={props.alt} />}
+    </div>
   );
 }
 

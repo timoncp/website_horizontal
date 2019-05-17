@@ -1,19 +1,41 @@
 .section-header {
+  display: block;
+  position: relative;
+}
+
+.section-header-text {
+  display: inline-block;
   font-family: 'KoHo', 'Helvetica Neue', sans-serif;
   font-size: 20px;
+  font-weight: 400;
 
   padding-top: 10px;
   padding-bottom: 25px;
   border-top: 1px solid;
   max-width: 280px;
+  width: 100%;
 }
 
-.section-header.paleorange {
+.section-header-text.sm {
+  width: 80%;
+  max-width: 210px;
+}
+
+.section-header-text.paleorange {
   color: #E6B685;
   border-top-color: #E6B685;
 }
 
-.section-header.lime {
+.section-header-text.lime {
   color: #D5EB98;
   border-top-color: #D5EB98;
+}
+
+.section-header-svg {
+  display: inline-block;
+  height: 40px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
 }
