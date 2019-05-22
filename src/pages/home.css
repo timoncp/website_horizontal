@@ -59,6 +59,22 @@
   font-size: 17px;
 }
 
+@media screen and (min-width: 667px) {
+  #home-arrow {
+    bottom: 40px;
+    right: 30px;
+    transform: scale(0.9) scaleX(0.3) scaleY(-0.45) rotate(-40deg);
+  }
+
+  #home-arrow-text {
+    opacity: 0.9;
+    font-size: 12px;
+    top: 25px;
+    right: 40px;
+    width: 200px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   #welcome {
     padding-top: 200px;
