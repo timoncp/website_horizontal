@@ -10,7 +10,6 @@ import ArrowRight from '../assets/arrow-right.svg';
 const paths = ['/', '/about', '/work', '/services'];
 
 function MiddleNav(props) {
-
   const goForward = function() {
     const i = paths.indexOf(props.location.pathname) + 1;
     const next = paths[i] || '/services';

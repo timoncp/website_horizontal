@@ -1,0 +1,56 @@
+.sidebar-sm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 65px;
+
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.sidebar-sm > h1 {
+  color: #5C656F;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  opacity: 0.85;
+  font-weight: 500;
+}
+
+#timo-img {
+  height: 40px;
+  border-radius: 50px;
+  border: 0.5px solid rgba(112, 112, 112, 0.8);
+  box-shadow: 0 1px 2px rgba(13, 10, 10, 0.35);
+}
+
+#menu-btn {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.sidebar-sm-nav {
+  width: 100%;
+  height: calc(100% - 65px);
+  bottom: 0;
+  margin-left: -15px;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  background-color: #424E5C;
+  opacity: 0.9;
+}
+
+.sidebar-sm-nav > a {
+  height: 50px;
+
+  font-size: 20px;
+  color: black;
+  padding-left: 30px;
+  line-height: 50px;
+}

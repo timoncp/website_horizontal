@@ -2,6 +2,14 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 1024px) {
+  .app {
+    flex-direction: row;
+  }
 }
 
 .app > div:nth-child(2) {

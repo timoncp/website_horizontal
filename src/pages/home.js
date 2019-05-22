@@ -1,8 +1,9 @@
 import React from 'react';
 
+import SocialBtn from '../shared/social-btn';
 import ArrowSVG from '../assets/home-arrow.svg';
 
-import './_common.css';
+import './page.css';
 import './home.css';
 
 function Home() {
@@ -16,6 +17,10 @@ function Home() {
       </div>
       <img id='home-arrow' src={ArrowSVG} alt='arrow pointing towards title' />
       <span id='home-arrow-text'>*At least that’s what I’ve been told about my color scheme</span>
+      <div className='home-socials'>
+        <SocialBtn type='linkedinWhite' />
+        <SocialBtn type='githubWhite' />
+      </div>
     </div>
   );
 }

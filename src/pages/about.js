@@ -5,7 +5,7 @@ import PageTitle from '../shared/page-title';
 import PageSubtitle from '../shared/page-subtitle';
 import CtaButton from '../shared/cta-btn';
 
-import './_common.css';
+import './page.css';
 import './about.css';
 
 import PortraitJPG from '../assets/portrait.jpg';

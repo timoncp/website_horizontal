@@ -1,39 +1,93 @@
 .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #86A5C1;
+  position: relative;
 }
 
 #welcome {
-  padding-top: 200px;
-  padding-left: 100px;
+  padding-top: 50px;
 }
 
 .welcome-gray {
   font-family: 'KoHo', 'Helvetica Neue', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   color: #DBDADA;
   text-shadow: 1px 2px 3px rgba(45, 46, 59, 0.082);
 }
 
 .welcome-yellow {
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
-  font-size: 62px;
+  font-size: 36px;
   font-weight: 800;
   font-style: italic;
   color: #F2E187;
-  text-shadow: -1px 0 #E2CD33, 0 1px #E2CD33, 1px 0 #E2CD33, 0 -1px #E2CD33, 0 3px 5px rgba(45, 46, 59, 0.178);
+  text-shadow: -0.5px 0 #E2CD33, 0 0.5px #E2CD33, 0.5px 0 #E2CD33, 0 -0.5px #E2CD33, 0 1px 1px rgba(45, 46, 59, 0.178);
 }
 
 #home-arrow {
   position: absolute;
-  bottom: 65px;
-  right: 200px;
-  transform: scaleX(0.8) scaleY(0.9);
+  bottom: 100px;
+  right: 0;
+  transform: scaleX(0.4) scaleY(0.45);
 }
 
 #home-arrow-text {
-  color: #424E5C;
-  font-size: 12px;
   position: absolute;
-  bottom: 50px;
-  right: 80px;
+  color: #424E5C;
+
+  font-size: 12px;
+  bottom: 150px;
+  right: 10px;
+  text-align: right;
+  width: 160px;
+}
+
+.home-socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.home-socials > .social-btn {
+  margin: 0 20px;
+}
+
+.home-socials > .social-btn > span {
+  color: #FFFFFF;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 1024px) {
+  #welcome {
+    padding-top: 200px;
+    padding-left: 100px;
+  }
+
+  .welcome-yellow {
+    font-size: 62px;
+    text-shadow: -1px 0 #E2CD33, 0 1px #E2CD33, 1px 0 #E2CD33, 0 -1px #E2CD33, 0 3px 5px rgba(45, 46, 59, 0.178);
+  }
+
+  .welcome-gray {
+    font-size: 50px;
+  }
+
+  #home-arrow {
+    bottom: 90px;
+    right: 180px;
+    transform: scaleX(0.8) scaleY(0.9);
+  }
+
+  #home-arrow-text {
+    font-size: 14px;
+    bottom: 50px;
+    right: 80px;
+    width: 200px;
+  }
+
+  .home-socials {
+    display: none;
+  }
 }

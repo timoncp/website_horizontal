@@ -11,7 +11,7 @@ import ComputerSVG from '../assets/computer.svg';
 import ServicesArrow from '../assets/services-arrow.svg';
 import CheckmarkOutline from '../assets/checkmark-outline.svg';
 
-import './_common.css';
+import './page.css';
 import './services.css';
 
 function Services() {

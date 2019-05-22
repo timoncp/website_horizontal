@@ -5,7 +5,7 @@ import SectionHeader from '../shared/section-header';
 
 import LandscappScreenshots from '../assets/landscapp-screenshots.png';
 
-import './_common.css';
+import './page.css';
 import './work.css';
 
 function Work() {
