@@ -75,6 +75,46 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  #welcome {
+    padding-top: 200px;
+    padding-left: 60px;
+    width: 700px;
+  }
+
+  .welcome-yellow {
+    font-size: 50px;
+    text-shadow: -1px 0 #E2CD33, 0 1px #E2CD33, 1px 0 #E2CD33, 0 -1px #E2CD33, 0 3px 5px rgba(45, 46, 59, 0.178);
+  }
+
+  .welcome-gray {
+    font-size: 38px;
+  }
+
+  #home-arrow {
+    opacity: 0.8;
+    top: auto;
+    bottom: 230px;
+    right: 120px;
+    transform: scale(1) scaleX(0.5) scaleY(0.6);
+  }
+
+  #home-arrow-text {
+    top: auto;
+    opacity: 0.9;
+    font-size: 12px;
+    bottom: 230px;
+    right: 80px;
+    width: 160px;
+  }
+
+  .home-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   #welcome {
     padding-top: 200px;
