@@ -45,6 +45,17 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  #portrait {
+    height: 210px;
+    margin-left: 55px;
+  }
+
+  .cta-buttons {
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   #portrait {
     height: 220px;
@@ -52,7 +63,7 @@
   }
 
   .cta-buttons {
-    margin-top: 30px
+    margin-bottom: 0;
   }
 }
 
