@@ -29,6 +29,12 @@
   }
 }
 
+@media screen and (min-width: 667px) {
+  .cta-button {
+    width: 220px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .cta-button {
     width: 225px;

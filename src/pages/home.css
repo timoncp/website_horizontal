@@ -1,13 +1,13 @@
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
   background-color: #86A5C1;
   position: relative;
 }
 
 #welcome {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 .welcome-gray {
@@ -28,7 +28,7 @@
 
 #home-arrow {
   position: absolute;
-  bottom: 100px;
+  bottom: 110px;
   right: 0;
   transform: scaleX(0.4) scaleY(0.45);
 }
@@ -38,16 +38,20 @@
   color: #424E5C;
 
   font-size: 12px;
-  bottom: 150px;
+  bottom: 160px;
   right: 10px;
   text-align: right;
   width: 160px;
 }
 
 .home-socials {
+  align-self: center;
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+
+  position: absolute;
+  bottom: 0;
 }
 
 .home-socials > .social-btn {
@@ -60,10 +64,15 @@
 }
 
 @media screen and (min-width: 667px) {
+  #welcome {
+    padding-top: 10px;
+    margin-left: -20px;
+  }
+
   #home-arrow {
     bottom: 40px;
     right: 30px;
-    transform: scale(0.9) scaleX(0.3) scaleY(-0.45) rotate(-40deg);
+    transform: scale(0.9) scaleX(0.3) scaleY(-0.4) rotate(-40deg);
   }
 
   #home-arrow-text {
@@ -77,9 +86,10 @@
 
 @media screen and (min-width: 768px) {
   #welcome {
+    width: 700px;
+    margin-left: 0;
     padding-top: 200px;
     padding-left: 60px;
-    width: 700px;
   }
 
   .welcome-yellow {

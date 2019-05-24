@@ -30,6 +30,21 @@
   }
 }
 
+@media screen and (min-width: 667px) {
+  #portrait {
+    height: 140px;
+    margin-left: 35px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 50px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   #portrait {
     height: 220px;
@@ -37,9 +52,6 @@
   }
 
   .cta-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-top: 30px
   }
 }
