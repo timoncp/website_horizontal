@@ -61,6 +61,20 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  #individual-services > .page-subtitle {
+    margin-bottom: 70px;
+  }
+
+  #individual-services > .text-column:nth-of-type(odd) {
+    max-width: 260px;
+  }
+
+  #individual-services > .text-column:nth-of-type(even) {
+    max-width: 280px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .large-section > .page-subtitle {
     margin-bottom: 80px;
