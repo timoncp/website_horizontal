@@ -40,6 +40,24 @@
     height: 600px;
     margin-bottom: 50px;
   }
+
+  #findie_sbu > .text-column {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #landscapp-screenshots-text {
+    margin-top: 80px;
+  }
+
+  #landscapp-screenshots {
+    height: 645px;
+  }
+
+  #findie_sbu > .text-column {
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
