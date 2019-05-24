@@ -66,12 +66,44 @@
     margin-bottom: 70px;
   }
 
+  #individual-services > .text-column {
+    margin-bottom: 70px;
+  }
+
   #individual-services > .text-column:nth-of-type(odd) {
     max-width: 260px;
   }
 
   #individual-services > .text-column:nth-of-type(even) {
     max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #individual-services > .page-subtitle {
+    margin-bottom: 50px;
+  }
+
+  #individual-services > .text-column:nth-of-type(odd) {
+    max-width: 320px;
+  }
+
+  #individual-services > .text-column:nth-of-type(even) {
+    max-width: 320px;
+  }
+
+  #services-arrow {
+    transform: scaleX(0.9) scaleY(1.3);
+    margin-top: -100px;
+  }
+
+  .list-entry {
+    display: inline-block;
+    max-width: 360px;
+  }
+
+  .list-entry:nth-last-of-type(even) {
+    float: right;
   }
 }
 

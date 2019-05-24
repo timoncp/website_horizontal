@@ -46,6 +46,16 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .section-header-text {
+    width: 70%;
+  }
+
+  .section-header-svg {
+    height: 150px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .section-header-text {
     max-width: 280px;
