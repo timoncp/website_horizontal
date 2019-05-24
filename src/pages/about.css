@@ -2,14 +2,35 @@
   background-color: #424E5C;
 }
 
-#photo-and-cta {
-  display: inline-block;
-  vertical-align: top;
-}
-
 #portrait {
   display: block;
   height: 300px;
   border: solid 1px #707070;
   margin-bottom: 50px;
+}
+
+.cta-buttons {
+  margin-top: 20px
+}
+
+@media screen and (min-width: 1024px) {
+  #portrait {
+    height: 220px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    float: right;
+  }
+
+  .cta-buttons {
+    margin-top: 30px
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #portrait {
+    height: 300px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    float: none;
+  }
 }

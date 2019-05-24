@@ -1,4 +1,5 @@
 .page-title {
+  display: none;
   margin-bottom: 140px; /* previously 162px */
 
   font-size: 30px;
@@ -19,4 +20,10 @@
 
 .page-title.lime {
   color: #D5EB98;
+}
+
+@media screen and (min-width: 1280px) {
+  .page-title {
+    display: block;
+  }
 }

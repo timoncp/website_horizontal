@@ -7,3 +7,9 @@
   color: #DBDADA;
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 1024px) {
+  .page-subtitle {
+    display: inline;
+  }
+}
