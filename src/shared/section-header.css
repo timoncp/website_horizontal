@@ -12,13 +12,7 @@
   padding-top: 10px;
   padding-bottom: 25px;
   border-top: 1px solid;
-  max-width: 280px;
-  width: 100%;
-}
-
-.section-header-text.sm {
-  width: 80%;
-  max-width: 210px;
+  width: 75%;
 }
 
 .section-header-text.paleorange {
@@ -32,10 +26,33 @@
 }
 
 .section-header-svg {
-  display: inline-block;
-  height: 40px;
+  height: 150px;
 
   position: absolute;
   right: 0;
   top: 0;
+
+  opacity: 0.18;
+}
+
+@media screen and (min-width: 667px) {
+  .section-header-text {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .section-header-svg {
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-header-text {
+    max-width: 280px;
+  }
+
+  .section-header-svg {
+    height: 40px;
+    opacity: 1;
+  }
 }

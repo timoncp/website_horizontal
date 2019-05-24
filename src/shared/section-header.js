@@ -5,10 +5,6 @@ import './section-header.css';
 function SectionHeader(props) {
   let txtCls = `section-header-text ${props.color}`;
 
-  if (props.icon) {
-    txtCls += ' sm';
-  }
-
   return (
     <div className='section-header'>
       <h3 className={txtCls}>{props.children}</h3>

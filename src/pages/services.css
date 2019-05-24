@@ -3,48 +3,100 @@
 }
 
 .large-section {
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 
 .large-section > .page-subtitle {
   text-align: center;
-  margin-bottom: 80px;
-}
-
-#individual-services {
-  margin-top: -60px;
-  flex: 5;
-  max-width: 660px;
+  margin-bottom: 50px;
 }
 
 #individual-services > .text-column {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
-#complete-solutions {
-  flex: 3;
-  margin: 0 30px;
-  max-width: 460px;
+#services-arrow {
+  margin-bottom: 50px;
 }
 
 .list-entry {
   margin-bottom: 30px;
 }
 
+.checkmark {
+  display: inline-block;
+  height: 20px;
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
 .list-entry > .text-column {
-  font-size: 18px;
+  display: inline-block;
+  width: calc(100% - 50px);
+  font-size: 16px;
   margin: 0;
 }
 
-#services-arrow {
-  position: absolute;
-  top: -195px;
-  left: 480px;
-  transform: scale(0.75) rotate(-5deg);
-  width: 25vw;
+@media screen and (min-width: 667px) {
+  .large-section > .page-subtitle {
+    text-align: left;
+  }
+
+  #individual-services > .text-column {
+    display: inline-block;
+  }
+
+  #individual-services > .text-column:nth-of-type(odd) {
+    max-width: 250px;
+  }
+
+  #individual-services > .text-column:nth-of-type(even) {
+    max-width: 270px;
+    float: right;
+  }
+
+  #complete-solutions {
+    margin-bottom: 30px;
+  }
 }
 
-.checkmark {
-  height: 25px;
-  margin-right: 25px;
+@media screen and (min-width: 1280px) {
+  .large-section > .page-subtitle {
+    margin-bottom: 80px;
+  }
+
+  #individual-services {
+    margin-top: -60px;
+    flex: 5;
+    max-width: 660px;
+  }
+
+  #individual-services > .text-column {
+    margin-bottom: 30px;
+  }
+
+  #services-arrow {
+    position: absolute;
+    top: -195px;
+    left: 480px;
+    transform: scale(0.75) rotate(-5deg);
+    width: 25vw;
+  }
+
+  #complete-solutions {
+    flex: 3;
+    margin: 0 30px;
+    max-width: 460px;
+  }
+
+  .checkmark {
+    height: 25px;
+    margin-top: 0;
+    margin-right: 25px;
+  }
+
+  .list-entry > .text-column {
+    font-size: 18px;
+  }
 }
