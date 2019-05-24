@@ -3,6 +3,7 @@
 }
 
 #be {
+
 }
 
 #landscapp-screenshots-text {
@@ -13,10 +14,11 @@
 }
 
 #landscapp-screenshots {
-  margin-bottom: 40px;
   display: inline-block;
   vertical-align: top;
   height: 500px;
+
+  margin-bottom: 40px;
 }
 
 #findie_sbu {
@@ -29,7 +31,16 @@
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 667px) {
+  #landscapp-screenshots-text {
+    margin-top: 70px;
+  }
 
+  #landscapp-screenshots {
+    height: 600px;
+    margin-bottom: 50px;
+  }
+}
 
 @media screen and (min-width: 1280px) {
   #be {
