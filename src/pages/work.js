@@ -12,14 +12,18 @@ function Work(props) {
   return (
     <div className='page work'>
       { (props.viewportWidth >= 1280) && <PageTitle color='paleorange'>previous work</PageTitle> }
-      <div id='be' className='text-column'>
-        <SectionHeader color='paleorange'>BearingPoint</SectionHeader>
-        Primarily worked on a project called Landscapp, a custom key performance indicator for application portfolios, with a rule-based calculation engine.<br /><br />
-        Had the chance to conduct this project from start up until version 2. Was instructed with monitoring development activity and expanding existing infrastructure.<br /><br />
-        Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Nginx, Docker, Amazon Web Services, Jenkins
+      <div>
+        <div id='be' className='text-column'>
+          <SectionHeader color='paleorange'>BearingPoint</SectionHeader>
+          Primarily worked on a project called Landscapp, a custom key performance indicator for application portfolios, with a rule-based calculation engine.<br /><br />
+          Had the chance to conduct this project from start up until version 2. Was instructed with monitoring development activity and expanding existing infrastructure.<br /><br />
+          Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Nginx, Docker, Amazon Web Services, Jenkins
+        </div>
+        <div className='ls-container'>
+          <span id='landscapp-screenshots-text'>Screenshots of Landscapp</span>
+          <img src={LandscappScreenshots} id='landscapp-screenshots' alt='Screenshots of the Landscapp project that I worked on' />
+        </div>
       </div>
-      <span id='landscapp-screenshots-text'>Screenshots of Landscapp</span>
-      <img src={LandscappScreenshots} id='landscapp-screenshots' alt='Screenshots of the Landscapp project that I worked on' />
       <div id='findie_sbu'>
         <div id='findie' className='text-column'>
           <SectionHeader color='paleorange'>Findie</SectionHeader>

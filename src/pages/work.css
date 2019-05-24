@@ -3,22 +3,29 @@
 }
 
 #be {
+  display: inline-block;
+}
 
+.ls-container {
+  display: inline-block;
+  vertical-align: top;
+
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 #landscapp-screenshots-text {
-  margin-top: 60px;
+  display: block;
   margin-bottom: 10px;
+
   font-size: 9px;
   color: #9EAAB7;
+  text-align: center;
 }
 
 #landscapp-screenshots {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   height: 500px;
-
-  margin-bottom: 40px;
 }
 
 #findie_sbu {
@@ -32,13 +39,16 @@
 }
 
 @media screen and (min-width: 667px) {
-  #landscapp-screenshots-text {
+  .ls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 70px;
+    margin-bottom: 50px;
   }
 
   #landscapp-screenshots {
     height: 600px;
-    margin-bottom: 50px;
   }
 
   #findie_sbu > .text-column {
@@ -47,7 +57,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  #landscapp-screenshots-text {
+  .ls-container {
     margin-top: 80px;
   }
 
@@ -56,6 +66,30 @@
   }
 
   #findie_sbu > .text-column {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #be {
+    width: 60%;
+  }
+
+  .ls-container {
+    float: right;
+    margin-top: 0;
+    margin-left: 35px;
+  }
+
+  #landscapp-screenshots {
+    height: 385px;
+  }
+
+  #findie_sbu > .text-column {
+    margin-bottom: 0;
+  }
+
+  #findie_sbu > div:first-child {
     margin-bottom: 70px;
   }
 }
