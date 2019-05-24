@@ -14,10 +14,10 @@ import CheckmarkOutline from '../assets/checkmark-outline.svg';
 import './page.css';
 import './services.css';
 
-function Services() {
+function Services(props) {
   return (
     <div className='page services'>
-      <PageTitle color='lime'>services</PageTitle>
+      { (props.viewportWidth >= 1280) && <PageTitle color='lime'>services</PageTitle> }
       <div className='flex-container'>
         <img id='services-arrow' src={ServicesArrow} alt='Arrow pointing towards complete solutions' />
         <div className='large-section' id='individual-services'>

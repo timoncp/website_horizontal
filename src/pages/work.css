@@ -3,8 +3,20 @@
 }
 
 #be {
-  margin-top: 50px;
-  margin-bottom: 50px;
+}
+
+#landscapp-screenshots-text {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 9px;
+  color: #9EAAB7;
+}
+
+#landscapp-screenshots {
+  margin-bottom: 40px;
+  display: inline-block;
+  vertical-align: top;
+  height: 500px;
 }
 
 #findie_sbu {
@@ -17,8 +29,16 @@
   margin-bottom: 50px;
 }
 
-#landscapp-screenshots {
-  display: inline-block;
-  vertical-align: top;
-  height: 600px;
+
+
+@media screen and (min-width: 1280px) {
+  #be {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #landscapp-screenshots {
+    margin: 0;
+    height: 600px;
+  }
 }
