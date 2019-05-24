@@ -4,8 +4,9 @@ import classNames from 'classnames';
 
 import './middle-nav.css';
 import TimoJPG from '../assets/portrait.jpg';
-import ArrowLeft from '../assets/arrow-left.svg';
-import ArrowRight from '../assets/arrow-right.svg';
+import ArrowLeftSVG from '../assets/arrow-left.svg';
+import ArrowRightSVG from '../assets/arrow-right.svg';
+import ArrowRightBlackSVG from '../assets/arrow-right-black.svg';
 
 const paths = ['/', '/about', '/work', '/services'];
 
@@ -24,13 +25,15 @@ function MiddleNav(props) {
     return props.history.push(next);
   }
 
+  let ArrowRight = props.viewportWidth < 1280 ? ArrowRightBlackSVG : ArrowRightSVG;
+
   return (
     <div className='middle-nav'>
       <img className={classNames('middle-nav-arrow', {
         dimmed: props.location.pathname === paths[0]
       })}
         alt='Previous Page'
-        src={ArrowLeft}
+        src={ArrowLeftSVG}
         onClick={goBackward}
       />
       <img className='middle-nav-center' src={TimoJPG}

@@ -29,7 +29,7 @@ function App() {
       { viewportWidth >= 1024 ? <Sidebar /> : <SidebarSm /> }
         <div>
           { (viewportWidth >= 1024) && <Navbar /> }
-          { (viewportWidth >= 1024) && <MiddleNav /> }
+          { (viewportWidth >= 1024) && <MiddleNav viewportWidth={viewportWidth} /> }
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/work' component={Work} />
