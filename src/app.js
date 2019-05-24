@@ -31,9 +31,15 @@ function App() {
           { (viewportWidth >= 1024) && <Navbar /> }
           { (viewportWidth >= 1024) && <MiddleNav viewportWidth={viewportWidth} /> }
           <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/work' component={Work} />
-          <Route exact path='/services' component={Services} />
+          <Route exact path='/about' render={
+            props => <About {...props} viewportWidth={viewportWidth} />
+          }/>
+          <Route exact path='/work' render={
+            props => <Work {...props} viewportWidth={viewportWidth} />
+          }/>
+          <Route exact path='/services' render={
+            props => <Services {...props} viewportWidth={viewportWidth} />
+          }/>
         </div>
       </div>
     </BrowserRouter>

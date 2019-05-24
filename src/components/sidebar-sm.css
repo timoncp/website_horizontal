@@ -3,14 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  height: 65px;
+  min-height: 65px;
 
   background-color: #FFFFFF;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
-.sidebar-sm > h1 {
+.sidebar-sm > .home-title {
   color: #5C656F;
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
   font-size: 17px;
