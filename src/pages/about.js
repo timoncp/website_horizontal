@@ -18,7 +18,7 @@ function About(props) {
         <img id='portrait' src={PortraitJPG} alt='Timon' />
         <PageSubtitle>Hello! <span role='img' aria-label='Waving Hand'>👋🏻</span></PageSubtitle>
         <br />
-        { (props.viewportWidth >= 1024) && (<><br /><br /></>) }
+        { (props.viewportWidth >= 1024) && <br /> }
         My name is Timon Cârneci-Pröve and I’m a <i>Fullstack Developer</i> based in Bucharest. <br /><br />
         I build <i>custom web applications</i> for small to medium enterprises. <br /><br />
         Having worked for four over years in corporations, startups and on individual projects, I developed the strength of understanding the technical, as well as the business and managerial aspects of a project. This is why is love offering my clients <i>complete solutions, from prototype to deployment, from sketch to final product</i>. <br /><br />
