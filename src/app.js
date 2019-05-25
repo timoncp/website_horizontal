@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
@@ -18,17 +19,19 @@ function App() {
   );
 
   useEffect(() => {
-    const onResize = () => setViewportWidth(Math.max(document.documentElement.clientWidth, window.innerWidth || 0))
-    window.addEventListener('resize', onResize)
-    return () => window.removeEventListener('resize', onResize)
+    const onResize = () => setViewportWidth(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
   });
+
+  const [scrollY, setScrollY] = useState(document.documentElement.scrollTop);
 
   return (
     <BrowserRouter>
       <div className='app'>
       { viewportWidth >= 1024 ? <Sidebar /> : <SidebarSm /> }
-        <div>
-          { (viewportWidth >= 1024) && <Navbar /> }
+        <div onScroll={() => setScrollY(document.getElementsByClassName('page')[0].scrollTop)}>
+          { (viewportWidth >= 1024) && <Navbar scrollY={scrollY} /> }
           { (viewportWidth >= 1024) && <MiddleNav viewportWidth={viewportWidth} /> }
           <Route exact path='/' component={Home} />
           <Route exact path='/about' render={

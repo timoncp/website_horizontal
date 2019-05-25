@@ -14,6 +14,7 @@
 
 #individual-services > .text-column {
   margin-bottom: 70px;
+  line-height: 28px;
 }
 
 #services-arrow {
@@ -36,6 +37,7 @@
   width: calc(100% - 50px);
   font-size: 16px;
   margin: 0;
+  line-height: 28px;
 }
 
 @media screen and (min-width: 667px) {
@@ -120,6 +122,7 @@
 
   #individual-services > .text-column {
     margin-bottom: 30px;
+    line-height: 30px;
   }
 
   #services-arrow {
@@ -140,6 +143,10 @@
     height: 25px;
     margin-top: 0;
     margin-right: 25px;
+  }
+
+  .list-entry {
+    line-height: 30px;
   }
 
   .list-entry > .text-column {

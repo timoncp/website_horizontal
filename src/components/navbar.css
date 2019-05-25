@@ -1,12 +1,24 @@
 .navbar {
+  width: 100%;
+  text-align: right;
   position: absolute;
   right: 0;
   top: 0;
-  margin: 15px;
+  padding: 15px;
   background-color: transparent;
   color: #DBDADA;
   text-shadow: 0 0.5px rgba(0, 0, 0, 0.24);
   z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.897);
+  color:  #424E5C;
+}
+
+.navbar.scrolled > .navbar-link.active {
+  color:  #424E5C;
 }
 
 .navbar-link {

@@ -4,9 +4,11 @@ import { NavLink } from 'react-router-dom';
 
 import './navbar.css';
 
-function Navbar() {
+function Navbar(props) {
+  const cls = props.scrollY > 45 ? 'navbar scrolled' : 'navbar';
+
   return (
-    <div className='navbar'>
+    <div className={cls}>
       <NavLink exact className='navbar-link' to='/'>Home</NavLink>
       <NavLink className='navbar-link' to='/about'>About</NavLink>
       <NavLink className='navbar-link' to='/work'>Previous Work</NavLink>
