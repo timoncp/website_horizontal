@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
@@ -24,7 +23,7 @@ function App() {
     return () => window.removeEventListener('resize', onResize);
   });
 
-  const [scrollY, setScrollY] = useState(document.documentElement.scrollTop);
+  const [scrollY, setScrollY] = useState(0);
 
   return (
     <BrowserRouter>

@@ -13,12 +13,14 @@
 }
 
 .navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.897);
-  color:  #424E5C;
+  /* background-color: rgba(255, 255, 255, 0.897);
+  color:  #424E5C; */
+
+  background-color: rgba(67, 69, 73, 0.87);
 }
 
 .navbar.scrolled > .navbar-link.active {
-  color:  #424E5C;
+  /* color:  #424E5C; */
 }
 
 .navbar-link {

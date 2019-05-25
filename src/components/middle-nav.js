@@ -11,6 +11,14 @@ import ArrowRightBlackSVG from '../assets/arrow-right-black.svg';
 const paths = ['/', '/about', '/work', '/services'];
 
 function MiddleNav(props) {
+  const resetNavbar = function() {
+    const navbar = document.getElementsByClassName('navbar')[0];
+
+    if (navbar !== undefined && navbar.classList.contains('scrolled')) {
+      navbar.classList.remove('scrolled');
+    }
+  }
+
   const goForward = function() {
     const i = paths.indexOf(props.location.pathname) + 1;
     const next = paths[i] || '/services';
@@ -21,6 +29,8 @@ function MiddleNav(props) {
   const goBackward = function() {
     const i = paths.indexOf(props.location.pathname) - 1;
     const next = paths[i] || '/';
+
+    if (next === '/') resetNavbar();
 
     return props.history.push(next);
   }
