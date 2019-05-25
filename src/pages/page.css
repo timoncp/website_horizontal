@@ -7,6 +7,12 @@
 
   padding: 50px 30px;
   margin-top: 65px;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.page::-webkit-scrollbar {
+  width: 0 !important
 }
 
 .text-column {
