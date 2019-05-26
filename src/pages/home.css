@@ -1,14 +1,15 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   background-color: #86A5C1;
   position: relative;
 }
 
 #welcome {
   padding-top: 0px;
-  margin-top: -10px;
+  margin-top: -30vh;
 }
 
 .welcome-gray {
@@ -27,22 +28,30 @@
   text-shadow: -0.5px 0 #E2CD33, 0 0.5px #E2CD33, 0.5px 0 #E2CD33, 0 -0.5px #E2CD33, 0 1px 1px rgba(45, 46, 59, 0.178);
 }
 
-#home-arrow {
+.home-arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   position: absolute;
-  bottom: 110px;
+  top: 33%;
   right: 0;
-  transform: scaleX(0.4) scaleY(0.45);
+
+  opacity: 0.7;
+}
+
+#home-arrow {
+  transform: scale(0.9) scaleX(0.4) scaleY(0.45);
 }
 
 #home-arrow-text {
-  position: absolute;
-  color: #424E5C;
-
-  font-size: 12px;
-  bottom: 160px;
-  right: 10px;
-  text-align: right;
   width: 160px;
+  margin-top: -90px;
+  margin-left: 30px;
+
+  color: #424E5C;
+  font-size: 12px;
+  text-align: right;
 }
 
 .home-socials {
@@ -66,31 +75,38 @@
 
 @media screen and (min-width: 667px) {
   #welcome {
-    padding-top: 10px;
-    margin-left: -20px;
+    width: 450px;
+    margin-bottom: -50px;
+    margin-left: -30px;
+  }
+
+  .home-arrow-container {
+    top: auto;
+    bottom: 20vh;
+    right: 35px;
+
+    opacity: 0.9;
   }
 
   #home-arrow {
-    bottom: 40px;
-    right: 30px;
-    transform: scale(0.9) scaleX(0.3) scaleY(-0.4) rotate(-40deg);
+    transform: scale(0.8) scaleX(0.5) scaleY(0.3);
   }
 
   #home-arrow-text {
-    opacity: 0.9;
-    font-size: 12px;
-    top: 25px;
-    right: 40px;
     width: 200px;
+    margin-top: -120px;
+
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
   #welcome {
-    width: 700px;
+    width: 600px;
     margin-left: 0;
-    padding-top: 200px;
-    padding-left: 60px;
+    margin-top: -15vh;
+    padding-top: 0;
+    padding-left: 0;
   }
 
   .welcome-yellow {
@@ -102,20 +118,19 @@
     font-size: 38px;
   }
 
-  #home-arrow {
-    opacity: 0.8;
+  .home-arrow-container {
     top: auto;
-    bottom: 230px;
-    right: 95px;
-    transform: scale(1) scaleX(0.5) scaleY(0.6);
+    bottom: 130px;
+    right: 85px;
+
+    opacity: 0.8;
+  }
+
+  #home-arrow {
+    transform: scale(0.7) scaleX(0.5) scaleY(0.6);
   }
 
   #home-arrow-text {
-    top: auto;
-    opacity: 0.9;
-    font-size: 12px;
-    bottom: 250px;
-    right: 80px;
     width: 160px;
   }
 
@@ -128,9 +143,11 @@
 
 @media screen and (min-width: 1024px) {
   #welcome {
-    padding-top: 65px;
+    padding-top: 0;
     padding-left: 0;
-    max-width: 650px;
+
+    margin-top: -40px;
+    width: 650px;
   }
 
   .welcome-yellow {
@@ -142,17 +159,21 @@
     font-size: 40px;
   }
 
-  #home-arrow {
-    opacity: 0.8;
+  .home-arrow-container {
+    top: auto;
+    right: 35px;
     bottom: 70px;
-    right: 130px;
-    transform: scaleX(0.65) scaleY(0.8);
+
+    opacity: 0.9;
+  }
+
+  #home-arrow {
+    margin-right: 50px;
+    transform: scale(0.9) scaleX(0.65) scaleY(0.6);
   }
 
   #home-arrow-text {
-    font-size: 12px;
-    bottom: 50px;
-    right: 90px;
+    margin-top: -70px;
     width: 170px;
   }
 
@@ -163,30 +184,34 @@
 
 @media screen and (min-width: 1280px) {
   #welcome {
-    padding-top: 200px;
+    padding-top: 0;
     padding-left: 100px;
+    width: 900px;
   }
 
   .welcome-yellow {
     font-size: 62px;
-    text-shadow: -1px 0 #E2CD33, 0 1px #E2CD33, 1px 0 #E2CD33, 0 -1px #E2CD33, 0 3px 5px rgba(45, 46, 59, 0.178);
+    text-shadow: -0.5px 0 #E2CD33, 0 0.5px #E2CD33, 0.5px 0 #E2CD33, 0 -0.5px #E2CD33, 0 1px 1px rgba(45, 46, 59, 0.178);
   }
 
   .welcome-gray {
     font-size: 50px;
   }
 
+  .home-arrow-container {
+    right: 35px;
+    bottom: 70px;
+  }
+
   #home-arrow {
-    bottom: 90px;
-    right: 180px;
-    transform: scaleX(0.8) scaleY(0.9);
+    transform: scaleX(0.7) scaleY(0.6);
   }
 
   #home-arrow-text {
-    font-size: 14px;
-    bottom: 50px;
-    right: 80px;
     width: 200px;
+    margin-top: -50px;
+
+    font-size: 14px;
   }
 
   .home-socials {
