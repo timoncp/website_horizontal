@@ -44,7 +44,8 @@
 @media screen and (min-width: 1280px) {
   .cta-button {
     display: block;
-    width: 100%;
+    width: 50%;
+    max-width: 375px;
 
     font-size: 18px;
     border-width: 5px;

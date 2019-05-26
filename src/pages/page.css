@@ -64,20 +64,25 @@
 
   .text-column {
     margin-right: 0;
+    max-width: 800px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .page {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
+    align-items: stretch;
     padding: 0px 50px;
   }
 
   .text-column {
+    align-self: center;
+    width: 60vw;
+    margin-right: 0;
+    line-height: 32px;
+    font-size: 18px;
+  }
+
+  .text-column:first-of-type {
     margin-right: 50px;
-    line-height: 26px;
   }
 }
