@@ -25,7 +25,9 @@
 }
 
 .box-image {
+  display: block;
   height: auto;
+  border-radius: 15px;
 }
 
 .box-image.floating {
@@ -39,7 +41,10 @@
 }
 
 .box-image.fixed {
-  width: 65px;
+  max-width: 110px;
+  max-height: 65px;
+  width: auto;
+  height: auto;
 }
 
 .box-image.none {
@@ -87,6 +92,17 @@
 
 @media screen and (min-width: 1280px) {
   .box {
-    max-width: 740px;
+    max-width: 760px;
+  }
+
+  .box-header {
+    min-height: 80px;
+    padding: 10px 20px 10px 70px;
+  }
+
+  .box-content {
+    font-size: 15px;
+    padding: 35px 70px;
+    overflow: auto;
   }
 }

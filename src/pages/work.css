@@ -1,20 +1,14 @@
-.work {
-  background-color: #464646;
+.work > .box {
+  margin-bottom: 60px;
 }
 
-#be {
+.box-content-left {
   display: inline-block;
-}
-
-.ls-container {
-  display: inline-block;
+  width: 100%;
   vertical-align: top;
-
-  margin-top: 60px;
-  margin-bottom: 40px;
 }
 
-#landscapp-screenshots-text {
+.screenshot-text {
   display: block;
   margin-bottom: 10px;
 
@@ -23,88 +17,50 @@
   text-align: center;
 }
 
-#landscapp-screenshots {
+.screenshot {
   display: block;
-  height: 485px;
-}
+  width: auto;
+  height: auto;
+  max-width: 90%;
 
-#findie_sbu {
-  display: inline-block;
-  vertical-align: top;
-}
-
-#findie_sbu > .text-column:first-of-type {
-  margin-bottom: 70px;
-}
-
-#findie_sbu > .text-column:nth-of-type(2) {
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 667px) {
-  .ls-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-  #landscapp-screenshots {
+  .screenshot {
     height: 600px;
-  }
-
-  #findie_sbu > .text-column:nth-of-type(2) {
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .ls-container {
-    margin-top: 80px;
-  }
-
-  #landscapp-screenshots {
+  .screenshot {
     height: 645px;
-  }
-
-  #findie_sbu > .text-column {
-    margin-bottom: 70px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #be {
-    width: 60%;
+  .box-content-left {
+    width: 47%;
   }
 
-  .ls-container {
-    float: right;
+  .screenshot {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    height: auto;
+
     margin-top: 0;
-    margin-left: 35px;
-  }
-
-  #landscapp-screenshots {
-    height: 385px;
-  }
-
-  #findie_sbu > .text-column {
-    margin-bottom: 0;
-  }
-
-  #findie_sbu > div:first-child {
-    margin-bottom: 70px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  #be {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  #landscapp-screenshots {
-    margin: 0;
-    height: 600px;
+  .screenshot {
+    margin-left: 0;
+    margin-left: 40px;
+    margin-right: -60px;
+    margin-top: -20px;
   }
 }

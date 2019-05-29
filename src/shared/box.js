@@ -7,7 +7,7 @@ function Box(props) {
     <div className='box'>
       <div className='box-header'>
         <h3 className='box-title'>{props.title}</h3>
-        <img className={`box-image ${props.imagePosition}`} />
+        <img className={`box-image ${props.imagePosition}`} src={props.imageSrc} />
       </div>
       <div className='box-content'>
       {props.children}
