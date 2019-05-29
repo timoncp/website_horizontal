@@ -3,8 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
 import SidebarSm from './components/sidebar-sm';
-import Navbar from './components/navbar';
-import MiddleNav from './components/middle-nav';
+import NavMenu from './components/nav-menu';
+import PageHeader from './components/page-header';
 import Home from './pages/home';
 import About from './pages/about';
 import Work from './pages/work';
@@ -30,8 +30,8 @@ function App() {
       <div className='app'>
       { viewportWidth >= 1024 ? <Sidebar /> : <SidebarSm /> }
         <div onScroll={() => setScrollY(document.getElementsByClassName('page')[0].scrollTop)}>
-          { (viewportWidth >= 1024) && <Navbar scrollY={scrollY} /> }
-          { (viewportWidth >= 1024) && <MiddleNav viewportWidth={viewportWidth} /> }
+          { (viewportWidth >= 1024) && <NavMenu scrollY={scrollY} /> }
+          { (viewportWidth >= 1024) && <PageHeader /> }
           <Route exact path='/' component={Home} />
           <Route exact path='/about' render={
             props => <About {...props} viewportWidth={viewportWidth} />

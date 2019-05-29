@@ -1,15 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="202.386" height="347.871" viewBox="0 0 202.386 347.871">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #707070;
-        stroke-dasharray: 2;
-      }
-    </style>
-  </defs>
   <g id="Group_17" data-name="Group 17" transform="translate(-1541.546 -605.3)">
-    <path id="Path_4" data-name="Path 4" class="cls-1" d="M1440.242,2221.9c-45.623-258.849-199.3-337.671-199.3-337.671" transform="translate(303.197 -1268.813)"/>
-    <path id="Path_5" data-name="Path 5" class="cls-1" d="M7.063,24.959,0,0,25.474,11.594" transform="translate(1542.582 614.931) rotate(-20)"/>
+    <path id="Path_4" data-name="Path 4" d="M1440.242,2221.9c-45.623-258.849-199.3-337.671-199.3-337.671" transform="translate(303.197 -1268.813)" fill="none" stroke="#d6cdcd" stroke-width="1" stroke-dasharray="2"/>
+    <path id="Path_5" data-name="Path 5" d="M7.063,24.959,0,0,25.474,11.594" transform="translate(1542.582 614.931) rotate(-20)" fill="none" stroke="#d6cdcd" stroke-width="1" stroke-dasharray="2"/>
   </g>
 </svg>

@@ -12,7 +12,7 @@ const titles = {
   '/': <h1 className='home-title'>Timon Cârneci-Pröve</h1>,
   '/about': <PageTitle color='seagreen'>about</PageTitle>,
   '/work': <PageTitle color='paleorange'>previous work</PageTitle>,
-  '/services': <PageTitle color='lime'>services</PageTitle>
+  '/services': <PageTitle color='cherry'>services</PageTitle>
 };
 
 function SidebarSm(props) {

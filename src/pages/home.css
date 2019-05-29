@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #86A5C1;
   position: relative;
 }
 
@@ -13,15 +12,16 @@
 }
 
 .welcome-gray {
-  font-family: 'KoHo', 'Helvetica Neue', sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
   font-size: 30px;
-  color: #DBDADA;
+  font-weight: 300;
+  color: #FFFFFF;
   text-shadow: 1px 2px 3px rgba(45, 46, 59, 0.082);
 }
 
 .welcome-yellow {
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 800;
   font-style: italic;
   color: #F2E187;
@@ -37,7 +37,7 @@
   top: 33%;
   right: 10px;
 
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 #home-arrow {
@@ -49,7 +49,7 @@
   margin-top: -90px;
   margin-left: 30px;
 
-  color: #424E5C;
+  color: #D6CDCD;
   font-size: 12px;
   text-align: right;
 }
@@ -69,13 +69,15 @@
 }
 
 .home-socials > .social-btn > span {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
   color: #FFFFFF;
   font-size: 17px;
 }
 
 @media screen and (min-width: 667px) {
   #welcome {
-    width: 450px;
+    width: 420px;
     margin-bottom: -50px;
     margin-left: -30px;
   }
@@ -131,6 +133,7 @@
   }
 
   #home-arrow-text {
+    margin-top: -80px;
     width: 160px;
   }
 

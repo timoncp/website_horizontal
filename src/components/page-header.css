@@ -1,0 +1,42 @@
+.page-header {
+  width: 160px;
+
+  position: absolute;
+  left: -80px;
+  top: 35px;
+  padding: 7px 0;
+  z-index: 3;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  font-size: 22px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.page-header.babyblue {
+  background-color: #86A5C1;
+}
+
+.page-header.seagreen {
+  background-color: #62ACA0;
+}
+
+.page-header.paleorange {
+  background-color: #DDA267;
+}
+
+.page-header.cherry {
+  background-color: #A74965;
+}
+
+@media screen and (min-width: 1280px) {
+  .page-header {
+    width: 172px;
+    left: -86px;
+    font-size: 24px;
+  }
+}
