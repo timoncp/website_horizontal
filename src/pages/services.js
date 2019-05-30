@@ -1,8 +1,7 @@
 import React from 'react';
 
-import PageTitle from '../shared/page-title';
+import Box from '../shared/box';
 import PageSubtitle from '../shared/page-subtitle';
-import SectionHeader from '../shared/section-header';
 
 import DatabaseSVG from '../assets/database.svg';
 import MobileSVG from '../assets/mobile.svg';
@@ -20,26 +19,21 @@ function Services(props) {
 
   return (
     <div className='page services'>
-      { (props.viewportWidth >= 1280) && <PageTitle color='lime'>services</PageTitle> }
-      <div className='large-section' id='individual-services'>
-        <PageSubtitle>individual services</PageSubtitle>
-        <div className='text-column'>
-          <SectionHeader color='lime' icon={ComputerSVG} alt='Web Development'>Web {'&'} UI</SectionHeader>
+      <div className='service-boxes'>
+        <Box title='Web & UI' imagePosition='floating' imageSrc={ComputerSVG}>
           Front-end frameworks<br />
           Mockups and rapid prototyping<br />
           Data visualisation<br />
           Client-side optimisation<br />
           Responsive design
-        </div>
-        <div className='text-column'>
-          <SectionHeader color='lime' icon={MobileSVG} alt='Mobile'>Mobile</SectionHeader>
+        </Box>
+        <Box title='Mobile' imagePosition='floating' imageSrc={MobileSVG}>
           Hybrid mobile app development<br />
           Deployment on iOS and Android<br />
           Map and location services<br />
           Custom in-app camera creation
-        </div>
-        <div className='text-column'>
-          <SectionHeader color='lime' icon={DatabaseSVG} alt='Databases'>Backend</SectionHeader>
+        </Box>
+        <Box title='Backend' imagePosition='floating' imageSrc={DatabaseSVG}>
           Backend server and business logic<br />
           API setup and structuring<br />
           SQL, NoSQL and Graph databases<br />
@@ -48,9 +42,8 @@ function Services(props) {
           SSL<br />
           Parallel processing<br />
           Efficient number crunching
-        </div>
-        <div className='text-column'>
-          <SectionHeader color='lime' icon={ServerSVG} alt='Server'>DevOps</SectionHeader>
+        </Box>
+        <Box title='DevOps' imagePosition='floating' imageSrc={ServerSVG}>
           Software-as-a-Service deployment<br />
           Continuous Integration<br />
           VMs and Docker Containers<br />
@@ -58,7 +51,7 @@ function Services(props) {
           Load-balancing<br />
           Error tracking and automatic reporting<br />
           Automated testing
-        </div>
+        </Box>
       </div>
       <img id='services-arrow' src={ArrowSVG} alt='Arrow pointing towards complete solutions' />
       <div className='large-section' id='complete-solutions'>
