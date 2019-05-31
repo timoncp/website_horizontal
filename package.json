@@ -1,6 +1,6 @@
 {
-  "name": "website_horizontal",
-  "version": "0.1.0",
+  "name": "timoncp.github.io",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
@@ -29,5 +29,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
