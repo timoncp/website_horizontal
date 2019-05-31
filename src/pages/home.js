@@ -12,12 +12,12 @@ function Home() {
       <div id='welcome'>
         <p className='welcome-gray'>welcome to</p>
         <p className='welcome-yellow'>the most notoriously</p>
-        <p className='welcome-yellow'>bland developer website</p>
-        <p className='welcome-gray'>in the world.</p>
-      </div>
-      <div className='home-arrow-container'>
-        <img id='home-arrow' src={ArrowSVG} alt='arrow pointing towards title' />
-        <span id='home-arrow-text'>*At least that’s what I’ve been told about my color scheme</span>
+        <p className='welcome-yellow'>bland developer</p>
+        <p className='welcome-yellow'>website <span className='welcome-gray'>in the world.</span></p>
+        <div className='home-arrow-container'>
+          <img id='home-arrow' src={ArrowSVG} alt='arrow pointing towards title' />
+          <span id='home-arrow-text'>*At least that’s what I’ve been told about my color scheme</span>
+        </div>
       </div>
       <div className='home-socials'>
         <SocialBtn type='linkedinWhite' />
