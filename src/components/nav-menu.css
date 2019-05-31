@@ -7,7 +7,7 @@
 
   position: absolute;
   right: 20px;
-  top: 120px;
+  top: 35px;
 
   border-radius: 15px;
   background-color: #424E5C;
@@ -101,9 +101,17 @@
     width: 50px;
   }
 
+  .nav-menu.open {
+    height: 420px;
+  }
+
   .nav-menu-icon {
     width: 20px;
     margin-right: 3px;
+  }
+
+  .nav-items {
+    top: 200px;
   }
 
   .nav-items > a.nav-link {

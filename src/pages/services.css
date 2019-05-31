@@ -1,93 +1,68 @@
 .service-boxes {
-  width: 80%;
+  width: 100%;
 }
 
 .service-boxes > .box {
   display: inline-block;
   vertical-align: top;
-  max-width: 46%;
-
-  margin-bottom: 50px;
-}
-
-.service-boxes > .box:nth-child(even) {
-  float: right;
-}
-
-#services-arrow {
-  margin-bottom: 50px;
-}
-
-.list-entry {
   margin-bottom: 30px;
 }
 
-.checkmark {
-  display: inline-block;
-  height: 20px;
-  margin-top: 6px;
-  margin-right: 15px;
-}
+.service-interlude {
+  align-self: flex-start;
 
-.list-entry > .text-column {
-  display: inline-block;
-  width: calc(100% - 50px);
+  color: #FFFFFF;
   font-size: 16px;
-  margin: 0;
-  line-height: 28px;
-}
-
-@media screen and (min-width: 667px) {
-  #complete-solutions {
-    margin-bottom: 30px;
-  }
+  margin: 50px 0 30px 0;
 }
 
 @media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1024px) {
-  #services-arrow {
-    transform: scaleX(0.9) scaleY(1.3);
-    margin-top: -100px;
+  .service-boxes > .box {
+    width: 46%;
+    margin-bottom: 40px;
   }
 
-  .list-entry {
-    display: inline-block;
-    max-width: 360px;
+  .service-boxes > .box:nth-child(even) {
+    float: right;
   }
 
-  .list-entry:nth-last-of-type(even) {
+  .service-interlude {
+    margin: 60px 0 45px 0;
+  }
+
+  .services .list-item:nth-of-type(even) {
     float: right;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .service-boxes {
+    max-width: 680px;
+  }
+
+  .service-boxes > .box {
+    max-width: 310px;
+  }
+
+  .service-interlude {
+    width: 100%;
+    max-width: 680px;
+    align-self: center;
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1280px) {
-  #services-arrow {
-    position: absolute;
-    top: -195px;
-    left: 480px;
-    transform: scale(0.75) rotate(-5deg);
-    width: 25vw;
+  .service-boxes {
+    max-width: 850px;
   }
 
-  #complete-solutions {
-    flex: 3;
-    margin: 0 30px;
-    max-width: 460px;
+  .service-boxes > .box {
+    max-width: unset;
   }
 
-  .checkmark {
-    height: 25px;
-    margin-top: 0;
-    margin-right: 25px;
-  }
-
-  .list-entry {
-    line-height: 30px;
-  }
-
-  .list-entry > .text-column {
-    font-size: 18px;
+  .service-interlude {
+    max-width: 850px;
+    font-size: 19px;
   }
 }

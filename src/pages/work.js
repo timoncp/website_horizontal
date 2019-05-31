@@ -19,7 +19,7 @@ function Work(props) {
         <p className='box-content-left'>
           Primarily worked on a project called Landscapp, a custom key performance indicator for application portfolios, with a rule-based calculation engine.<br /><br />
           Had the chance to conduct this project from start up until version 2. Was instructed with monitoring development activity and expanding existing infrastructure.<br /><br />
-          Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Nginx, Docker, Amazon Web Services, Jenkins\
+          Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Nginx, Docker, Amazon Web Services, Jenkins
         </p>
         <img className='screenshot' src={LandscappScreenshots} alt='Screenshots of Landscapp' />
       </Box>
