@@ -46,3 +46,7 @@ a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+button:focus {
+  outline:0;
+}

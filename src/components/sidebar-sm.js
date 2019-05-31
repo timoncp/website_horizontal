@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { NavLink, withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import PageTitle from '../shared/page-title';
 
@@ -29,10 +29,10 @@ function SidebarSm(props) {
       />
       { isNavVisible && (
         <div className='sidebar-sm-nav' onClick={() => setNavVisibility(false)}>
-          <NavLink exact activeClassName='active' to='/'>Home</NavLink>
-          <NavLink to='/about'>About</NavLink>
-          <NavLink to='/work'>Previous Work</NavLink>
-          <NavLink to='/services'>Services</NavLink>
+          <Link exact to='/' className='nav-sm-link babyblue'>home</Link>
+          <Link to='/about' className='nav-sm-link seagreen'>about</Link>
+          <Link to='/work' className='nav-sm-link paleorange'>work</Link>
+          <Link to='/services' className='nav-sm-link cherry'>services</Link>
         </div>
       )}
     </div>
