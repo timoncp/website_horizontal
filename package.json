@@ -1,6 +1,5 @@
 {
-  "name": "timoncp.github.io",
-  "homepage" : "http://timoncp.github.io/",
+  "name": "website_horizontal",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
