@@ -13,3 +13,9 @@
   transition: all .2s cubic-bezier(.25,1.6,.6,1.4);
   transform: scale(1.1);
 }
+
+@media screen and (min-width: 1280px) {
+  .social-icon {
+    width: 44px;
+  }
+}
