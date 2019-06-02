@@ -26,7 +26,7 @@ function About(props) {
         Curiosities: <i>Data Visualisation, Machine Learning, Server-less apps</i>
         <div className='cta-buttons'>
           <CtaButton href='mailto:timon.carneciprove@icloud.com'>Get In Touch →</CtaButton>
-          <CtaButton>View Resume →</CtaButton>
+          <CtaButton href='timon_carneci-prove_cv.pdf'>View Resume →</CtaButton>
         </div>
       </Box>
     </div>
