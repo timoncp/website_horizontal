@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Box from '../shared/box';
+import Url from '../shared/url';
 
 import LandscappScreenshots from '../assets/landscapp-screenshots.png';
 
@@ -35,6 +36,7 @@ function Work(props) {
       <Box title='Findie' imagePosition='fixed' imageSrc={FindieLogo}>
         Built a page management admin app to quickly generate and customize the look and content of white-label instances.<br /><br />
         Built a raw tool that extracts interesting scenes in a video file based on sound activity.<br /><br />
+        The live app can be accesed at <Url href='https://www.findie.me'>www.findie.me</Url>.<br /><br />
         Technologies used: Node.js, React, ffMPEG, Linux Shell, GitLab
       </Box>
     </div>
