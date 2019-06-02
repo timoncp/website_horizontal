@@ -17,7 +17,7 @@ function Services(props) {
     <div className='page services'>
       <Box title='Complete solutions' imagePosition='floating' imageSrc={MazeSVG}>
         I love offering my clients complete solutions. Invariably, any contemporary web solution will require knowledge of a large number of practices related to it. Luckily I got to dip my toe in what I consider to be the 4 main aspects of it.<br /><br />
-        If you choose to go for a complete solution, there a number of extra ways in which I can help you, over choosing individual services:<br /><br />
+        If you choose to go for a complete solution, there are a number of extra ways in which I can help you, over choosing individual services:<br /><br />
         <ListItem>
           Consultancy at every step of the process
         </ListItem>

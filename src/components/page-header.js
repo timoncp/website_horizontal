@@ -5,27 +5,29 @@ import './page-header.css';
 
 const paths = {
   '/': {
-    color: 'babyblue',
+    cls: 'babyblue',
     label: 'home',
   },
   '/about': {
-    color: 'seagreen',
+    cls: 'seagreen',
     label: 'about',
   },
   '/work': {
-    color: 'paleorange',
+    cls: 'paleorange',
     label: 'work',
   },
   '/services': {
-    color: 'cherry',
+    cls: 'cherry',
     label: 'services',
   },
 }
 
 function PageHeader(props) {
-  const { color, label } = paths[props.location.pathname];
+  if (props.location.pathname === '/attributions') return null;
 
-  return <div className={`page-header ${color}`}>{label}</div>;
+  const { cls, label } = paths[props.location.pathname];
+
+  return <div className={`page-header ${cls}`}>{label}</div>;
 }
 
 export default withRouter(PageHeader);

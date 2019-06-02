@@ -17,11 +17,6 @@
   width: 0 !important
 }
 
-.text-column > i {
-  font-style: italic;
-  color: #86C9AD;
-}
-
 @media screen and (min-width: 667px) {
   .page {
     height: calc(100% - 60px);

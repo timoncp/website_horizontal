@@ -9,6 +9,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Work from './pages/work';
 import Services from './pages/services';
+import Attributions from './pages/attributions';
 
 import './app.css';
 
@@ -33,15 +34,16 @@ function App() {
           { (viewportWidth >= 1024) && <NavMenu scrollY={scrollY} /> }
           { (viewportWidth >= 1024) && <PageHeader /> }
           <Route exact path='/' component={Home} />
-          <Route exact path='/about' render={
+          <Route path='/about' render={
             props => <About {...props} viewportWidth={viewportWidth} />
           }/>
-          <Route exact path='/work' render={
+          <Route path='/work' render={
             props => <Work {...props} viewportWidth={viewportWidth} />
           }/>
-          <Route exact path='/services' render={
+          <Route path='/services' render={
             props => <Services {...props} viewportWidth={viewportWidth} />
           }/>
+          <Route path='/attributions' component={Attributions} />
         </div>
       </div>
     </BrowserRouter>

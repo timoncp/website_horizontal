@@ -43,7 +43,6 @@ a:active {
 }
 
 a:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 

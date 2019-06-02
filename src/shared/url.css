@@ -1,0 +1,18 @@
+a.url,
+a.url:focus,
+a.url:visited,
+a.url:link,
+a.url:active {
+  text-decoration: none;
+  color: rgb(174, 194, 216);
+  cursor: pointer;
+}
+
+a.url:hover {
+  text-decoration: underline;
+  color: rgb(179, 209, 241);
+}
+
+a.important {
+  font-weight: bold;
+}
