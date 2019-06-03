@@ -12,6 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "bash deploy-build-to-gh-pages.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
