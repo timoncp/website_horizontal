@@ -1,5 +1,5 @@
 .about i {
-  color: #86C9A2;
+  color: rgb(152, 240, 189);
 }
 
 #portrait {
@@ -68,7 +68,9 @@
 
 @media screen and (min-width: 1280px) {
   #portrait {
-    height: 160px;
+    right: 55px;
+    height: 14vw;
+    max-height: 200px;
   }
 
   .cta-buttons {

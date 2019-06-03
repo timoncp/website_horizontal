@@ -16,7 +16,7 @@ function About(props) {
     <div className='page about'>
       <Box title='Greetings! 👋🏻' imagePosition='none'>
         <img id='portrait' src={PortraitJPG} alt='Timon' />
-        My name is Timon Cârneci-Pröve and I’m a <i>Fullstack Developer</i> based {breakLine()}in Bucharest. <br /><br />
+        My name is Timon Cârneci-Pröve and I’m a <i>Fullstack Developer</i> {breakLine()}based in Bucharest. <br /><br />
         I build <i>custom web applications</i> for small to medium enterprises. <br /><br />
         Having worked for four over years in corporations, startups and on individual projects, I developed the strength of understanding the technical, managerial and business-related aspects of a project. This is why I love offering my clients <i>complete solutions, from prototype to deployment, from sketch to final product</i>. <br /><br />
         However, I do offer <i><Link to='/services'>individual services</Link></i> as well if needed.<br /><br />
