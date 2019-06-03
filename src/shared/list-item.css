@@ -14,6 +14,7 @@
 @media screen and (min-width: 768px) {
   .list-item {
     width: 49%;
+    min-height: 60px;
     margin-left: -20px;
   }
 }
