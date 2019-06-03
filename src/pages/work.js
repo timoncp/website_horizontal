@@ -13,7 +13,7 @@ import SBULogo from '../assets/logo-sbu.png';
 import './page.css';
 import './work.css';
 
-function Work(props) {
+function Work() {
   return (
     <div className='page work'>
       <Box title='BearingPoint' imagePosition='fixed' imageSrc={BearingPointLogo}>

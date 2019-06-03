@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
 import SidebarSm from './components/sidebar-sm';
@@ -27,7 +27,7 @@ function App() {
   const [scrollY, setScrollY] = useState(0);
 
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <div className='app'>
       { viewportWidth >= 1024 ? <Sidebar /> : <SidebarSm /> }
         <div onScroll={() => setScrollY(document.getElementsByClassName('page')[0].scrollTop)}>
@@ -37,16 +37,12 @@ function App() {
           <Route path='/about' render={
             props => <About {...props} viewportWidth={viewportWidth} />
           }/>
-          <Route path='/work' render={
-            props => <Work {...props} viewportWidth={viewportWidth} />
-          }/>
-          <Route path='/services' render={
-            props => <Services {...props} viewportWidth={viewportWidth} />
-          }/>
+          <Route path='/work' component={Work} />
+          <Route path='/services' component={Services} />
           <Route path='/attributions' component={Attributions} />
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

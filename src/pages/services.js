@@ -12,7 +12,7 @@ import MazeSVG from '../assets/maze.svg';
 import './page.css';
 import './services.css';
 
-function Services(props) {
+function Services() {
   return (
     <div className='page services'>
       <Box title='Complete solutions' imagePosition='floating' imageSrc={MazeSVG}>
