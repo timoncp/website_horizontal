@@ -97,8 +97,8 @@
 
 @media screen and (min-width: 1280px) {
   .nav-menu {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
   }
 
   .nav-menu.open {
@@ -106,7 +106,7 @@
   }
 
   .nav-menu-icon {
-    width: 20px;
+    width: 25px;
     margin-right: 3px;
   }
 
@@ -115,7 +115,9 @@
   }
 
   .nav-items > a.nav-link {
-    font-size: 19px;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 9px 17px;
   }
 }
 
