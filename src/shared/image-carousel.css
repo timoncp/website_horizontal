@@ -1,0 +1,113 @@
+.image-carousel {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 30px;
+}
+
+.image-carousel-main {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-carousel-overlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.897);
+}
+
+.image-carousel-overlay.visible {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.image-carousel-current {
+  display: block;
+  width: auto;
+  height: auto;
+
+  max-width: 90%;
+  max-height: 90%;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.image-carousel-close {
+  position: absolute;
+
+  top: 30px;
+  right: 30px;
+
+  height: 35px;
+  width: auto;
+}
+
+@media screen and (min-width: 667px) {
+  .image-carousel-main {
+    height: 600px;
+  }
+
+  .image-carousel-current {
+    max-width: 90%;
+    max-height: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-carousel-main {
+    height: 550px;
+  }
+
+  .image-carousel-close {
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image-carousel {
+    width: 45%;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+
+  .image-carousel-main {
+    height: auto;
+    width: 100%;
+  }
+
+  .image-carousel-current {
+    max-width: 80%;
+    max-height: 85%;
+  }
+
+  .image-carousel-close {
+    height: 50px;
+    right: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .image-carousel {
+    margin-top: -20px;
+  }
+
+  .image-carousel-current {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}

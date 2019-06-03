@@ -17,17 +17,6 @@
   text-align: center;
 }
 
-.screenshot {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 90%;
-
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media screen and (min-width: 667px) {
   .screenshot {
     height: 600px;
@@ -45,14 +34,14 @@
     width: 47%;
   }
 
-  .screenshot {
+  .work .image-carousel {
     display: inline-block;
     vertical-align: top;
-    width: 45%;
+    /* width: 45%;
     height: auto;
 
     margin-top: 0;
-    margin-left: 40px;
+    margin-left: 40px; */
   }
 
   .work > .box:first-of-type > .box-content {

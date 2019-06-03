@@ -2,8 +2,21 @@ import React from 'react';
 
 import Box from '../shared/box';
 import Url from '../shared/url';
+import ImageCarousel from '../shared/image-carousel';
 
 import LandscappScreenshots from '../assets/landscapp-screenshots.png';
+import LS1 from '../assets/landscapp-screenshots/landscapp1.png';
+import LS2 from '../assets/landscapp-screenshots/landscapp2.png';
+import LS3 from '../assets/landscapp-screenshots/landscapp3.png';
+import LS4 from '../assets/landscapp-screenshots/landscapp4.png';
+import LS5 from '../assets/landscapp-screenshots/landscapp5.png';
+import LS6 from '../assets/landscapp-screenshots/landscapp6.png';
+import LS7 from '../assets/landscapp-screenshots/landscapp7.png';
+import LS8 from '../assets/landscapp-screenshots/landscapp8.png';
+import LS9 from '../assets/landscapp-screenshots/landscapp9.png';
+import LS10 from '../assets/landscapp-screenshots/landscapp10.png';
+import LS11 from '../assets/landscapp-screenshots/landscapp11.png';
+import LS12 from '../assets/landscapp-screenshots/landscapp12.png';
 
 import BearingPointLogo from '../assets/logo-bearingpoint.jpg';
 import CreditSuisseLogo from '../assets/logo-creditsuisse.jpg';
@@ -22,7 +35,10 @@ function Work() {
           Had the chance to conduct this project from start up until version 2. Was instructed with monitoring development activity and expanding existing infrastructure.<br /><br />
           Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Nginx, Docker, Amazon Web Services, Jenkins
         </p>
-        <img className='screenshot' src={LandscappScreenshots} alt='Screenshots of Landscapp' />
+        <ImageCarousel alt='Screenshots of Landscapp'
+          mainSrc={LandscappScreenshots}
+          carouselSrc={[LS1, LS2, LS3, LS4, LS5, LS6, LS7, LS8, LS9, LS10, LS11, LS12]}
+        />
       </Box>
       <Box title='CreditSuisse' imagePosition='fixed' imageSrc={CreditSuisseLogo}>
         Developed tools and processes to be used by front office when creating orders for the newly launched DigiPigi savings pig.<br /><br />
