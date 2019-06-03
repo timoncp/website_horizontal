@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
-import SidebarSm from './components/sidebar-sm';
+import NavbarSm from './components/navbar-sm';
 import NavMenu from './components/nav-menu';
 import PageHeader from './components/page-header';
 import Home from './pages/home';
@@ -29,7 +29,7 @@ function App() {
   return (
     <HashRouter basename='/'>
       <div className='app'>
-      { viewportWidth >= 1024 ? <Sidebar /> : <SidebarSm /> }
+      { viewportWidth >= 1024 ? <Sidebar /> : <NavbarSm /> }
         <div onScroll={() => setScrollY(document.getElementsByClassName('page')[0].scrollTop)}>
           { (viewportWidth >= 1024) && <NavMenu scrollY={scrollY} /> }
           { (viewportWidth >= 1024) && <PageHeader /> }

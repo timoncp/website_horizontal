@@ -1,4 +1,4 @@
-.sidebar-sm {
+.navbar-sm {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,12 +15,24 @@
   z-index: 3;
 }
 
-.sidebar-sm > .home-title {
-  color: #1B3A5D;
+.navbar-sm.open {
+  background-color: #424E5C;
+}
+
+.navbar-sm.open > .page-title {
+  color: #FFFFFF;
+}
+
+
+.navbar-sm > .home-title {
+  color: #424E5C;
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
   font-size: 17px;
-  opacity: 0.85;
   font-weight: 500;
+}
+
+.navbar-sm.open > .home-title {
+  color: #FFFFFF;
 }
 
 #timo-img {
@@ -30,19 +42,25 @@
   box-shadow: 0 1px 2px rgba(13, 10, 10, 0.35);
 }
 
-#menu-btn {
+.menu-btn {
   width: 25px;
   height: auto;
   cursor: pointer;
 }
 
-.sidebar-sm-nav {
+.menu-btn.open {
+  transform: rotate(90deg);
+}
+
+.navbar-sm-nav {
   width: 100%;
   height: calc(100vh - 65px);
 
   position: absolute;
   top: 65px;
   right: 0;
+
+  padding-top: 60px;
 
   display: flex;
   flex-direction: column;
@@ -52,7 +70,7 @@
   background-color: #424E5C;
 }
 
-.sidebar-sm-nav > a.nav-sm-link {
+.navbar-sm-nav > a.nav-sm-link {
   display: block;
   width: 75%;
   max-width: 300px;
@@ -71,45 +89,73 @@
   border-radius: 15px 0 0 15px;
 }
 
-.sidebar-sm-nav > a.babyblue {
+.navbar-sm-nav > a.babyblue {
   background-color: #86A5C1;
   z-index: 9;
 }
 
-.sidebar-sm-nav > a.seagreen {
+.navbar-sm-nav > a.seagreen {
   background-color: #62ACA0;
   z-index: 8;
 }
 
-.sidebar-sm-nav > a.paleorange {
+.navbar-sm-nav > a.paleorange {
   background-color: #DDA267;
   z-index: 7;
 }
 
-.sidebar-sm-nav > a.cherry {
+.navbar-sm-nav > a.cherry {
   background-color: #A74965;
   z-index: 6;
 }
 
+.navbar-sm-bottom {
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: right;
+  line-height: 30px;
+}
+
 @media screen and (min-width: 667px) {
-  .sidebar-sm {
+  .navbar-sm {
     min-height: 60px;
   }
 
-  .sidebar-sm-nav {
+  .navbar-sm-nav {
     height: calc(100vh - 60px);
+
     top: 60px;
+    padding-top: 10px;
+  }
+
+  .navbar-sm-nav > a.nav-sm-link {
+    font-size: 19px;
+    line-height: 60px;
+  }
+
+  .navbar-sm-bottom {
+    margin-bottom: 10px;
+    line-height: 22px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .sidebar-sm {
+  .navbar-sm {
     min-height: 65px;
   }
 
-  .sidebar-sm-nav {
+  .navbar-sm-nav {
     padding-top: 100px;
     justify-content: flex-start;
     top: 65px;
+  }
+
+  .navbar-sm-bottom {
+    margin-bottom: 50px;
+    line-height: 30px;
   }
 }
