@@ -18,7 +18,8 @@
 }
 
 .sidebar-mid {
-  margin-top: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sidebar-title {

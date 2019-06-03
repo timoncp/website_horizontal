@@ -138,8 +138,12 @@
   }
 
   .navbar-sm-bottom {
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-right: 0;
     margin-bottom: 10px;
     line-height: 22px;
+    text-align: left;
   }
 }
 
@@ -155,7 +159,11 @@
   }
 
   .navbar-sm-bottom {
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-left: 0;
     margin-bottom: 50px;
     line-height: 30px;
+    text-align: right;
   }
 }

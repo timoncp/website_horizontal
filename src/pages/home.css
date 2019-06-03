@@ -6,6 +6,7 @@
 }
 
 #welcome {
+  margin-top: auto;
   position: relative;
 }
 
@@ -55,13 +56,10 @@
 }
 
 .home-socials {
-  align-self: center;
   display: flex;
   justify-content: center;
+  margin-top: auto;
   margin-bottom: 25px;
-
-  position: absolute;
-  bottom: 0;
 }
 
 .home-socials > .social-btn {
@@ -78,6 +76,11 @@
 @media screen and (min-width: 667px) {
   .home {
     justify-content: flex-start;
+    padding: 0;
+  }
+
+  #welcome {
+    margin-bottom: 50px;
   }
 
   .home-arrow-container {
@@ -103,6 +106,10 @@
 @media screen and (min-width: 768px) {
   .home {
     justify-content: center;
+  }
+
+  #welcome {
+    margin-bottom: 0;
   }
 
   .welcome-yellow {
@@ -137,13 +144,11 @@
 
 @media screen and (min-width: 1024px) {
   .home {
-    justify-content: center;
     padding: 0;
   }
 
   #welcome {
     margin-top: 80px;
-    margin-left: -80px;
   }
 
   .welcome-yellow {
@@ -161,8 +166,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .home {
-    justify-content: center;
+  #welcome {
+    margin-top: 20vh;
   }
 
   .welcome-yellow {
@@ -179,7 +184,7 @@
   }
 
   #home-arrow {
-    height: 220px;
+    height: 20vh;
   }
 
   #home-arrow-text {
