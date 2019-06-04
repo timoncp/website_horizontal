@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
@@ -14,21 +14,6 @@ import Attributions from './pages/attributions';
 import './app.css';
 
 function App() {
-  const [viewportWidth, setViewportWidth] = useState(
-    () => Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-  );
-
-  useEffect(() => {
-    const onResize = () => {
-      const w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-      setViewportWidth(w);
-    };
-
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  });
-
   return (
     <HashRouter basename='/'>
       <div className='app'>
@@ -38,9 +23,7 @@ function App() {
           <Navbar />
           <PageHeader />
           <Route exact path='/' component={Home} />
-          <Route path='/about' render={
-            props => <About {...props} viewportWidth={viewportWidth} />
-          }/>
+          <Route path='/about' component={About}/>
           <Route path='/work' component={Work} />
           <Route path='/services' component={Services} />
           <Route path='/attributions' component={Attributions} />

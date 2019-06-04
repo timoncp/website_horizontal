@@ -32,7 +32,7 @@ function Work() {
       <Box title='BearingPoint' imagePosition='fixed' imageSrc={BearingPointLogo}>
         <p className='box-content-left'>
           Primarily developed an application called Landscapp, a key performance indicator for application portfolios, with a rule-based calculation engine. During later stages of the projects, I was instructed with managing development activity, client acquisition and expanding existing infrastructure.<br /><br />
-          Some key features included creating custom-client instances, internationalisation, impersonation, visualising statistics using different graph types, high-DPI PDF export, XLS/CSV import and export, parallel backend calculations, auditing, hotfixing and more.<br /><br />
+          Some key features included managing multiple client instances, internationalisation, impersonation, visualising statistics using different graph types, high-DPI PDF export, XLS/CSV import and export, parallel backend calculations, auditing, hotfixing and more.<br /><br />
           Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Linux Shell, Nginx, Docker, Amazon Web Services, Jenkins
         </p>
         <ImageCarousel alt='Screenshots of Landscapp'

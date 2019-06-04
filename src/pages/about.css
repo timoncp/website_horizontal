@@ -51,13 +51,8 @@
   #portrait {
     height: 140px;
 
-    position: absolute;
-    top: 25px;
-    right: 30px;
     margin-left: 20px;
-    z-index: 3;
 
-    border-radius: 10px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.116);
   }
 

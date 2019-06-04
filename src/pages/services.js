@@ -16,57 +16,59 @@ function Services() {
   return (
     <div className='page services'>
       <Box title='Complete solutions' imagePosition='floating' imageSrc={MazeSVG}>
-        I love offering my clients complete solutions. Invariably, any contemporary web solution will require knowledge of a large number of practices related to it. Luckily I got to dip my toe in what I consider to be the 4 main aspects of it.<br /><br />
-        If you choose to go for a complete solution, there are a number of extra ways in which I can help you, over choosing individual services:<br /><br />
+        I love offering my clients complete solutions. For most small to medium size applications, a developer should be able to handle all technical intricacies required. What’s more important is understanding your client's business needs and managing the development path correctly.<br /><br />
+        Should you wish to solely hire me as a Frontend, Backend or Mobile Developer or DevOps engineer for your project though, please see my individual services below.<br /><br />
+        Here are some of the extras that come with building a complete solution together:<br /><br />
         <ListItem>
           Consultancy at every step of the process
         </ListItem>
         <ListItem>
-          Design mockups and app prototyping before beginning the building process
+          Very competitive prices, compared to outsourced teams of developers
+        </ListItem>
+        <ListItem>
+          Technical maintenance included for up to 3 months after project end
         </ListItem>
         <ListItem>
           Delivery and extended review at previously agreed upon development milestones
         </ListItem>
         <ListItem>
-          Very competitive prices, compared to similar full products from corporations or teams of multiple developers
-        </ListItem>
-        <ListItem>
-          Technical maintenance included for up to 3 months after project end
+          Design mockups and app prototyping before beginning the building process
         </ListItem>
       </Box>
       <p className='service-interlude'>Without further ado... <b>here are a few things I can do:</b></p>
       <div className='service-boxes'>
         <Box title='Web & UI' imagePosition='floating' imageSrc={ComputerSVG}>
           React-based applications<br />
-          Mockups in Adobe XD and Sketch<br />
-          Rapid prototyping<br />
+          Design in Adobe XD and Sketch<br />
+          Responsive design<br />
           Data visualisation using D3<br />
-          Responsive design
+          SVG / Canvas elements<br />
+          Rapid prototyping
         </Box>
         <Box title='Mobile' imagePosition='floating' imageSrc={MobileSVG}>
           Hybrid mobile app development<br />
           Deployment on iOS and Android<br />
           Map and location services<br />
           Custom in-app camera creation<br />
-          Shared codebase with web version<br />
+          Shared components with browser codebase<br />
         </Box>
         <Box title='Backend' imagePosition='floating' imageSrc={DatabaseSVG}>
-          Backend server and business logic<br />
-          API setup and structuring<br />
+          Server and routing<br />
+          Form validation using Joi<br />
+          REST APIs<br />
           SQL, NoSQL and Graph databases<br />
-          Live applications via WebSockets<br />
           Secure data storage/encryption<br />
           SSL<br />
           Parallel processing<br />
         </Box>
         <Box title='DevOps' imagePosition='floating' imageSrc={ServerSVG}>
-          Software-as-a-Service deployment<br />
+          Deploying SaaS applications<br />
+          Multi-environment development<br />
           Continuous Integration<br />
           VMs and Docker Containers<br />
           Cloud services using AWS<br />
-          Automatic error tracking<br />
-          Automated testing<br />
-          Load-balancing<br />
+          Error tracking software<br />
+          Integration testing<br />
         </Box>
       </div>
     </div>
