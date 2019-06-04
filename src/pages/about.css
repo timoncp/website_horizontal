@@ -10,7 +10,7 @@
   margin-bottom: 0;
   margin-left: 25px;
 
-  border: solid 1px rgba(236, 239, 223, 0.452);
+  border: solid 0.3px rgba(236, 239, 223, 0.452);
   filter: saturate(1.2) brightness(0.95);
 }
 
@@ -69,8 +69,8 @@
 @media screen and (min-width: 1280px) {
   #portrait {
     right: 55px;
-    height: 14vw;
-    max-height: 200px;
+    height: 13vw;
+    max-height: 190px;
   }
 
   .cta-buttons {

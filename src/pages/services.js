@@ -34,20 +34,21 @@ function Services() {
           Technical maintenance included for up to 3 months after project end
         </ListItem>
       </Box>
-      <p className='service-interlude'>In any case... <b>this is what I can do:</b></p>
+      <p className='service-interlude'>Without further ado... <b>here are a few things I can do:</b></p>
       <div className='service-boxes'>
         <Box title='Web & UI' imagePosition='floating' imageSrc={ComputerSVG}>
-          Front-end frameworks<br />
-          Mockups and rapid prototyping<br />
-          Data visualisation<br />
-          Client-side optimisation<br />
+          React-based applications<br />
+          Mockups in Adobe XD and Sketch<br />
+          Rapid prototyping<br />
+          Data visualisation using D3<br />
           Responsive design
         </Box>
         <Box title='Mobile' imagePosition='floating' imageSrc={MobileSVG}>
           Hybrid mobile app development<br />
           Deployment on iOS and Android<br />
           Map and location services<br />
-          Custom in-app camera creation<br /><br />
+          Custom in-app camera creation<br />
+          Shared codebase with web version<br />
         </Box>
         <Box title='Backend' imagePosition='floating' imageSrc={DatabaseSVG}>
           Backend server and business logic<br />
@@ -63,9 +64,9 @@ function Services() {
           Continuous Integration<br />
           VMs and Docker Containers<br />
           Cloud services using AWS<br />
-          Load-balancing<br />
           Automatic error tracking<br />
           Automated testing<br />
+          Load-balancing<br />
         </Box>
       </div>
     </div>

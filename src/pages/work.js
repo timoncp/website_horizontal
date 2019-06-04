@@ -31,9 +31,9 @@ function Work() {
     <div className='page work'>
       <Box title='BearingPoint' imagePosition='fixed' imageSrc={BearingPointLogo}>
         <p className='box-content-left'>
-          Primarily worked on a project called Landscapp, a custom key performance indicator for application portfolios, with a rule-based calculation engine.<br /><br />
-          Had the chance to conduct this project from start up until version 2. Was instructed with monitoring development activity and expanding existing infrastructure.<br /><br />
-          Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Nginx, Docker, Amazon Web Services, Jenkins
+          Primarily developed an application called Landscapp, a key performance indicator for application portfolios, with a rule-based calculation engine. During later stages of the projects, I was instructed with managing development activity, client acquisition and expanding existing infrastructure.<br /><br />
+          Some key features included creating custom-client instances, internationalisation, impersonation, visualising statistics using different graph types, high-DPI PDF export, XLS/CSV import and export, parallel backend calculations, auditing, hotfixing and more.<br /><br />
+          Technologies used: React.js, Redux, Sass, Mocha, Node.js, Express, MongoDB, Linux Shell, Nginx, Docker, Amazon Web Services, Jenkins
         </p>
         <ImageCarousel alt='Screenshots of Landscapp'
           mainSrc={LandscappScreenshots}
@@ -41,19 +41,20 @@ function Work() {
         />
       </Box>
       <Box title='CreditSuisse' imagePosition='fixed' imageSrc={CreditSuisseLogo}>
-        Developed tools and processes to be used by front office when creating orders for the newly launched DigiPigi savings pig.<br /><br />
-        Expanded on and renewed existing full integration test cases.<br /><br />
-        Technologies used: Java, Appway, Selenium, TeamCity, TestNG, HTML, CSS, SVN<br /><br />
-      </Box>
-      <Box title='Soft Business Union' imagePosition='fixed' imageSrc={SBULogo}>
-        Developed the prototypes for two mobile applications, within a larger system implemented for the local police station in Bucharest. Maps, Forms, Open Claims, and localisation were features  of both the citizen and the police office app.<br /><br />
-        Technologies used: React Native, Android, iOS,  JavaScript ES6,  Maps, Leaflet, Node.js, PostgreSQL
+        Developed tools and processes to be used by front office when submitting orders for the newly launched DigiPigi, a digital piggy bank.<br /><br />
+        Expanded on and renewed integration tests, assuring existing features worked as expected after new code was pushed.<br /><br />
+        Technologies used: Java, Appway, Selenium, TeamCity, TestNG, HTML, CSS, xPath, SVN, JIRA<br /><br />
       </Box>
       <Box title='Findie' imagePosition='fixed' imageSrc={FindieLogo}>
         Built a page management admin app to quickly generate and customize the look and content of white-label instances.<br /><br />
         Built a raw tool that extracts interesting scenes in a video file based on sound activity.<br /><br />
         The live app can be accesed at <Url href='https://www.findie.me'>www.findie.me</Url>.<br /><br />
         Technologies used: Node.js, React, ffMPEG, Linux Shell, GitLab
+      </Box>
+      <Box title='Soft Business Union' imagePosition='fixed' imageSrc={SBULogo}>
+        Developed prototypes for two mobile applications, part of a larger IT system implemented for the local police in Bucharest. Maps, forms, open claims, in-app camera and location services were some key features of the apps.<br /><br />
+        Introduced the React environment to the company and conducted tutorials in React, React Native and Redux.<br /><br />
+        Technologies used: React Native, Android, iOS, JavaScript ES6, Maps, Leaflet, Node.js, PostgreSQL
       </Box>
     </div>
   );

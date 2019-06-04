@@ -3,7 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
 import NavbarSm from './components/navbar-sm';
-import NavMenu from './components/nav-menu';
+import Navbar from './components/navbar';
 import PageHeader from './components/page-header';
 import Home from './pages/home';
 import About from './pages/about';
@@ -19,20 +19,24 @@ function App() {
   );
 
   useEffect(() => {
-    const onResize = () => setViewportWidth(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+    const onResize = () => {
+      const w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+      setViewportWidth(w);
+    };
+
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
   });
 
-  const [scrollY, setScrollY] = useState(0);
-
   return (
     <HashRouter basename='/'>
       <div className='app'>
-      { viewportWidth >= 1024 ? <Sidebar /> : <NavbarSm /> }
-        <div onScroll={() => setScrollY(document.getElementsByClassName('page')[0].scrollTop)}>
-          { (viewportWidth >= 1024) && <NavMenu scrollY={scrollY} /> }
-          { (viewportWidth >= 1024) && <PageHeader /> }
+        <Sidebar />
+        <NavbarSm />
+        <div>
+          <Navbar />
+          <PageHeader />
           <Route exact path='/' component={Home} />
           <Route path='/about' render={
             props => <About {...props} viewportWidth={viewportWidth} />

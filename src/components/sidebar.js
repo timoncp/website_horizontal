@@ -11,13 +11,13 @@ function Sidebar() {
       <div className='sidebar-mid'>
         <h3 className='sidebar-title'>
         Timon<br />
-        Cârneci-Pröve
+        Carneci-Pröve
         </h3>
         <h4 className='sidebar-subtitle'>
           fullstack<br />
           developer<br />
           &#8212;<br />
-          custom<br />
+          complete<br />
           web solutions<br />
         </h4>
         <SocialIcon type='linkedin' />

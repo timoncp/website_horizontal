@@ -174,3 +174,9 @@
     position: initial;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .navbar-sm {
+    display: none;
+  }
+}

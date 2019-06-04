@@ -4,16 +4,16 @@ import classNames from 'classnames';
 
 import StripeMenu from '../assets/stripe-menu-white.svg';
 
-import './nav-menu.css';
+import './navbar.css';
 
-function NavMenu() {
+function Navbar() {
   const [isVisibile, setVisibility] = useState(false);
 
-  const menuCls = classNames('nav-menu', {
+  const menuCls = classNames('navbar', {
     open: isVisibile,
   });
 
-  const iconCls = classNames('nav-menu-icon', {
+  const iconCls = classNames('navbar-icon', {
     open: isVisibile,
   });
 
@@ -34,4 +34,4 @@ function NavMenu() {
   );
 }
 
-export default NavMenu;
+export default Navbar;

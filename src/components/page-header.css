@@ -1,4 +1,5 @@
 .page-header {
+  display: none;
   width: 160px;
 
   position: absolute;
@@ -31,6 +32,12 @@
 
 .page-header.cherry {
   background-color: #A74965;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-header {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1280px) {
