@@ -59,7 +59,7 @@
   top: 65px;
   right: 0;
 
-  padding-top: 90px;
+  padding-top: 70px;
 
   display: flex;
   flex-direction: column;
@@ -67,6 +67,17 @@
   justify-content: center;
 
   background-color: #424E5C;
+}
+
+.navbar-sm-bottom {
+  margin-top: auto;
+  margin-bottom: 60px;
+  margin-right: 20px;
+
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: right;
+  line-height: 30px;
 }
 
 .navbar-sm-nav > a.nav-sm-link {
@@ -106,17 +117,6 @@
 .navbar-sm-nav > a.cherry {
   background-color: #A74965;
   z-index: 6;
-}
-
-.navbar-sm-bottom {
-  margin-top: auto;
-  margin-bottom: 20px;
-  margin-right: 20px;
-
-  color: #FFFFFF;
-  font-size: 14px;
-  text-align: right;
-  line-height: 30px;
 }
 
 @media screen and (min-width: 667px) {

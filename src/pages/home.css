@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
 }
 
 #welcome {
@@ -76,11 +77,11 @@
 @media screen and (min-width: 667px) {
   .home {
     justify-content: flex-start;
-    padding: 0;
   }
 
   #welcome {
     margin-bottom: 50px;
+    max-width: auto;
   }
 
   .home-arrow-container {
