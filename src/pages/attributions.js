@@ -18,7 +18,7 @@ function Attributions() {
     <div className='page attributions'>
       <Box title='Attributions' imagePosition='none'>
         This website is created entirely by myself using React 16, CSS3 and Google Fonts. The entire webpage code
-        can be found <Url href='https://www.github.com/timoncp/website_horizontal' important>here</Url>.<br /><br />
+        can be found <Url href='https://www.github.com/timoncp/website' important>here</Url>.<br /><br />
         However, there are a few graphics/icons I have used under
         the <Url href='https://en.wikipedia.org/wiki/Creative_Commons'>Creative Commons license</Url> on the <Link to='services'>services page</Link>.
         The authors have kindly asked to be credited.<br /><br /><br />
