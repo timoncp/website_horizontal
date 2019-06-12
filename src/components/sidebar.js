@@ -22,6 +22,7 @@ function Sidebar() {
         </h4>
         <SocialIcon type='linkedin' />
         <SocialIcon type='github' />
+        <SocialIcon type='cv' />
       </div>
       <div className='sidebar-bottom'>
         <p><Link to='/attributions'>Attributions</Link> &nbsp;&nbsp; | &nbsp;&nbsp; <a href='mailto:timon.carneciprove@icloud.com'>Contact</a></p>

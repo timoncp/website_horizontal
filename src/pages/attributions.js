@@ -9,6 +9,7 @@ import ComputerSVG from '../assets/computer.svg';
 import ServerSVG from '../assets/server.svg';
 import DatabaseSVG from '../assets/database.svg';
 import MobileSVG from '../assets/mobile.svg';
+import DocumentSVG from '../assets/document.svg';
 
 import './page.css';
 import './attributions.css';
@@ -24,7 +25,8 @@ function Attributions() {
         The authors have kindly asked to be credited.<br /><br /><br />
 
         <img src={MazeSVG} alt='Maze' />
-        <img src={ComputerSVG} alt='Computer' /><br />
+        <img src={ComputerSVG} alt='Computer' />
+        <img src={DocumentSVG} alt='Resume' /><br />
         Icons made by <Url href='https://www.freepik.com'>Freepik</Url> from <Url href='https://www.flaticon.com'>www.flaticon.com</Url> is licensed by <Url href='http://creativecommons.org/licenses/by/3.0/'>CC 3.0 BY</Url>.<br /><br /><br />
 
         <img src={ServerSVG} alt='Server' />
