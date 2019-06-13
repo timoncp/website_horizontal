@@ -22,6 +22,7 @@ function Home() {
       <div className='home-socials'>
         <SocialBtn type='linkedinWhite' />
         <SocialBtn type='githubWhite' />
+        <SocialBtn type='cvWhite' />
       </div>
     </div>
   );

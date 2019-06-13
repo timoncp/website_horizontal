@@ -1,27 +1,22 @@
 import React from 'react';
 
 import './social-btn.css';
-import linkedin from '../assets/linkedin.svg';
 import linkedinWhite from '../assets/linkedin-white.svg';
-import github from '../assets/github.svg';
 import githubWhite from '../assets/github-white.svg';
+import cvWhite from '../assets/cv-white.svg';
 
 const objects = {
-  linkedin: {
-    label: 'LinkedIn',
-    src: linkedin
-  },
   linkedinWhite: {
     label: 'LinkedIn',
     src: linkedinWhite
   },
-  github: {
-    label: 'Github',
-    src: github
-  },
   githubWhite: {
     label: 'Github',
     src: githubWhite
+  },
+  cvWhite: {
+    label: 'Resume',
+    src: cvWhite
   }
 }
 

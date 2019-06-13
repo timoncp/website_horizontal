@@ -103,16 +103,16 @@
 
 @media screen and (min-width: 1280px) {
   .navbar {
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
   }
 
   .navbar.open {
-    height: 430px;
+    height: 445px;
   }
 
   .navbar-icon {
-    width: 25px;
+    width: 23px;
     margin-right: 3px;
   }
 

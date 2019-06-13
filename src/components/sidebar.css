@@ -2,7 +2,7 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
+  width: 210px;
 
   position: relative;
   padding-left: 35px;
@@ -20,6 +20,10 @@
 .sidebar-mid {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.sidebar-mid > a:nth-of-type(3) > .social-icon {
+  margin-right: 0;
 }
 
 .sidebar-title {

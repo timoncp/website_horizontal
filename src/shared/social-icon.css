@@ -8,10 +8,6 @@
   transform: scale(1);
 }
 
-.social-icon:nth-child(3) {
-  margin-right: 0;
-}
-
 .social-icon:hover {
   opacity: 1;
   transition: all .2s cubic-bezier(.25,1.6,.6,1.4);
