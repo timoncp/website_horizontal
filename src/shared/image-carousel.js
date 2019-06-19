@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 
 import CloseIcon from '../assets/close-icon-white.svg';
+import CarouselArrowLeft from '../assets/carousel-arrow-left.svg';
+import CarouselArrowRight from '../assets/carousel-arrow-right.svg';
 
 import './image-carousel.css';
 
@@ -13,10 +15,22 @@ function ImageCarousel(props) {
     visible: isCarouselVisible,
   });
 
-  const changeImgIndex = () => {
+  const nextImg = (e) => {
+    e.stopPropagation();
+
     let index = imgIndex + 1;
 
     if (index === props.carouselSrc.length) index = 0;
+
+    setImgIndex(index);
+  };
+
+  const previousImg = (e) => {
+    e.stopPropagation();
+
+    let index = imgIndex - 1;
+
+    if (index < 0) index = props.carouselSrc.length - 1;
 
     setImgIndex(index);
   };
@@ -39,10 +53,20 @@ function ImageCarousel(props) {
         alt={props.alt}
       />
       <div className={carouselCls} onClick={handleOverlayClose}>
+        <img className='image-carousel-arrow back'
+          src={CarouselArrowLeft}
+          onClick={previousImg}
+          alt='Back arrow'
+        />
         <img className='image-carousel-current'
           src={props.carouselSrc[imgIndex]}
-          onClick={changeImgIndex}
+          onClick={nextImg}
           alt={props.alt}
+        />
+        <img className='image-carousel-arrow forward'
+          src={CarouselArrowRight}
+          onClick={nextImg}
+          alt='Back arrow'
         />
         <img className='image-carousel-close'
           alt='Close button'
