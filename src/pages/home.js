@@ -20,9 +20,9 @@ function Home() {
         </div>
       </div>
       <div className='home-socials'>
-        <SocialBtn type='linkedinWhite' />
-        <SocialBtn type='githubWhite' />
-        <SocialBtn type='cvWhite' />
+        <SocialBtn type='linkedinWhite' linkTo='https://www.linkedin.com/in/timoncp' />
+        <SocialBtn type='githubWhite' linkTo='https://www.github.com/timoncp' />
+        <SocialBtn type='cvWhite' linkTo='timon_carneci-prove_cv.pdf' />
       </div>
     </div>
   );

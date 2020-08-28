@@ -24,7 +24,7 @@ function SocialBtn(props) {
   return (
     <div className='social-btn'>
       <img src={objects[props.type].src} alt={objects[props.type].label} />
-      <span>{objects[props.type].label}</span>
+      <a href={props.linkTo}>{objects[props.type].label}</a>
     </div>
   );
 }
