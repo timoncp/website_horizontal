@@ -10,8 +10,10 @@ function Sidebar() {
     <div className='sidebar'>
       <div className='sidebar-mid'>
         <h3 className='sidebar-title'>
-        Timon<br />
-        Carneci-Pröve
+        <Link to='/home'>
+          Timon<br />
+          Carneci-Pröve
+        </Link>
         </h3>
         <h4 className='sidebar-subtitle'>
           fullstack<br />
@@ -26,7 +28,11 @@ function Sidebar() {
       </div>
       <div className='sidebar-bottom'>
         <p><Link to='/attributions'>Attributions</Link> &nbsp;&nbsp; | &nbsp;&nbsp; <a href='mailto:timon.carneciprove@icloud.com'>Contact</a></p>
-        <span><b>timoncp.com</b></span>&nbsp;&nbsp;<span>© 2019</span>
+        <span>
+          <b>
+            <Link to='/home'>timoncp.com</Link>
+          </b>
+        </span>&nbsp;&nbsp;<span>© 2019</span>
       </div>
     </div>
   );
