@@ -7,7 +7,7 @@ import StripeMenu from '../assets/stripe-menu-white.svg';
 import './navbar.css';
 
 function Navbar() {
-  const [isVisibile, setVisibility] = useState(false);
+  const [isVisibile, setVisibility] = useState(true);
 
   const menuCls = classNames('navbar', {
     open: isVisibile,
